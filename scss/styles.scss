@@ -3,4 +3,8 @@ $primary: #3E5F74;
 
 nav {
     background-color: $primary !important;
+    padding: 0 !important;
+    #logoLeftBank {
+        width: 70px;
+    }
 }

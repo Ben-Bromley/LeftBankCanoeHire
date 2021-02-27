@@ -1,4 +1,9 @@
 nav {
   background-color: #3E5F74 !important;
+  padding: 0 !important;
+}
+
+nav #logoLeftBank {
+  width: 70px;
 }
 /*# sourceMappingURL=styles.css.map */
