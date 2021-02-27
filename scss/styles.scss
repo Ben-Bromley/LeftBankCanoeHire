@@ -1,10 +1,64 @@
+// Add google imports here
 
 $primary: #3E5F74;
+$bg-main: #FCF3F0;
+// $bg-siderbar: #;
+
+
+main {
+    background-color: $bg-main;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: white;
+        text-decoration: underline;
+    }
+}
 
 nav {
     background-color: $primary !important;
     padding: 0 !important;
+    min-width: 11vh;
     #logoLeftBank {
         width: 70px;
+    }
+}
+
+.main-content {
+    min-height: 109vh;
+
+}
+footer {
+    margin: 0;
+    padding: 10px 0;
+    background-color: $primary;
+    color: #fff;
+    hr {
+        border: 1px solid white;
+        opacity: 1;
+    }
+    .footer-content {
+        .linkGroup {
+            padding: 0.8em 0;
+        }
+        .copyright {
+            padding-top: 20px;
+            color: #eee;
+            max-width: 60%;
+        }
+    }
+    .licenseImage-container {
+        margin: 0 auto;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 50%;
+        }
+
     }
 }

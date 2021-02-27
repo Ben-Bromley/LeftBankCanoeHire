@@ -1,9 +1,66 @@
+main {
+  background-color: #FCF3F0;
+}
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 nav {
   background-color: #3E5F74 !important;
   padding: 0 !important;
+  min-width: 11vh;
 }
 
 nav #logoLeftBank {
   width: 70px;
+}
+
+.main-content {
+  min-height: 109vh;
+}
+
+footer {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #3E5F74;
+  color: #fff;
+}
+
+footer hr {
+  border: 1px solid white;
+  opacity: 1;
+}
+
+footer .footer-content .linkGroup {
+  padding: 0.8em 0;
+}
+
+footer .footer-content .copyright {
+  padding-top: 20px;
+  color: #eee;
+  max-width: 60%;
+}
+
+footer .licenseImage-container {
+  margin: 0 auto;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .licenseImage-container img {
+  width: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
