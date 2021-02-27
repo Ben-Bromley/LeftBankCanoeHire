@@ -15,6 +15,7 @@ My web development trial for Ultimate Web Design
 - [x] Site Structure
 - [x] Page Structure
 - [x] Responsive Designs = Desktop, Tablet and Mobile
+- [x] Template for Subpages
 
 ## Phase 3: Drafting Build
 
