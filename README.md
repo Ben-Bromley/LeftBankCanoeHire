@@ -8,15 +8,15 @@ My web development trial for Ultimate Web Design
 ## Phase 1: Analysis and Targeting
 
 - [x] Establish the target demographic: (Women & Families)
-- [ ] Features to keep that demographic?
+- [x] Features to keep that demographic?
 
 ## Phase 2: Initial Design
 
-- [ ] Site Structure
-- [ ] Page Structure
-- [ ] Responsive Designs = Desktop, Tablet and Mobile
+- [x] Site Structure
+- [x] Page Structure
+- [x] Responsive Designs = Desktop, Tablet and Mobile
 
-## Phase 3: Drafting
+## Phase 3: Drafting Build
 
 - [ ] 1st Draft
 - [ ] 1st Draft Review
