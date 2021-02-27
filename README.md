@@ -1,8 +1,11 @@
 # LeftBankCanoeHire
-My web development trial for Ultimate Web Design
+### My web development trial for Ultimate Web Design
 
 ---
 
+
+
+---
 # Plan:
 
 ## Phase 1: Analysis and Targeting
@@ -34,3 +37,21 @@ My web development trial for Ultimate Web Design
 - [ ] Was this quality work?
 - [ ] Did I complete it in a reasonable time frame?
 - [ ] Did I learn any skills from this?
+
+---
+
+## Evolution of the project
+---
+
+### Original 
+---
+- *Image of Original Landing Page* 
+### New Landing Page
+---
+- *Image of New Landing Page*
+### New SubPage Template
+---
+- *Image of Template*
+### MobileDesign
+---
+- *Image(s) of mobile design*
