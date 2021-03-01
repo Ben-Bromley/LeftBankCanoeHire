@@ -5,52 +5,150 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Left Bank | Canoe Hire</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/styles.css">
-    <title>Left Bank | Canoe Hire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Lets find some more meta tags! -->
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img id="logoLeftBank" src="Resources/landingPage/logoLeftBank.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Canoeing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kayaking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Camping</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">On the River</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
+    <div id="info-bar" class="container-fluid d-none d-sm-flex justify-content-evenly align-items-center p-1">
+        <div id="phone-num" class="d-flex justify-content-between">
+            <i class="fa fa-phone"></i>
+            <!-- href tel attribute from original site :) -->
+            <p class="m-0"><a href="tel:01432264807">01432 264 807</a></p>
+        </div>
+        <div id="envelope">
+            <i class="fa fa-envelope"></i>
+            <!-- clickable link to email :) -->
+            <p class="m-0"><a href="mailto:enquiries@leftbankcanoe.co.uk">enquiries@leftbankcanoe.co.uk</a></p>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logoLeftBank" src="Resources/landingPage/logoLeftBank.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Canoeing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kayaking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Camping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">On the River</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main>
-        <div class="container main-content">
-            <p>some text</p>
+        <div class="row">
+
+            <article id="slide-1" class="col-md-8">
+                <section id="header-img-container" class="container-fluid">
+                    <!-- add .jpg once photo is cropped -->
+                    <img src="Resources/landingPage/headerCanoeing.jpg" alt="just an image" id="header-img"
+                        class="img-fluid">
+                </section>
+                <section class="container intro-content">
+                    <div id="title">
+                        <h1>Left Bank <span>Canoe Hire</span></h1>
+                    </div>
+                    <div class="info-big">
+                        <p>Left Bank Canoe Hire provides Canoes & Kayak hire across all stretches of the beautiful River
+                            Wye, in Hereford, Wales.</p>
+                    </div>
+                    <div class="info-small">
+                        <p>Canoe & Kayak hire starts from £20 per person, transport included and kids under 13 go half
+                            price!
+                        </p>
+                    </div>
+                    <section class="d-flex justify-content-center">
+                        <a href="" class="btn btn-primary">Hire Here</a>
+                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                    </section>
+                </section>
+            </article>
+            <!-- Make this article go to right side on larger displays -->
+            <article id="slide-2" class="container col-md-4">
+                <section>
+                    <h2 id="slide-2-title">Our Activities</h2>
+                    <section class="activity-images">
+                        <div class="card text-white">
+                            <img class="card-img" src="Resources/landingPage/card1Canoeing.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">Canoeing</h3>
+                                <p class="card-text">The River Wye is the best place in the UK to go canoeing. We use
+                                    ‘Old Town 158’ canoes which are superb for all abilities and large enough to carry
+                                    all necessary equipment. <br><a class="learn-more-link" href="">&lt;&lt; Learn More
+                                        &gt;&gt;</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-white">
+                            <img class="card-img" src="Resources/landingPage/card2Kayaking.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">Kayaking</h3>
+                                <p class="card-text">Kayaking on the River Wye is fantastic for all ages. Whether you
+                                    fancy
+                                    an introduction or you're an experienced paddler seeking adrenaline on the Wye, we
+                                    have
+                                    something for you. <br><a class="learn-more-link" href="">&lt;&lt; Learn More
+                                        &gt;&gt;</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-white">
+                            <img class="card-img" src="Resources/landingPage/card3Camping.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">Camping</h3>
+                                <p class="card-text">Why not turn your canoeing trip into a great breakaway by camping
+                                    on
+                                    the route. We know all the best spots whether you want a peaceful escape, family fun
+                                    or
+                                    a stag or hen weekend. <br><a class="learn-more-link" href="">&lt;&lt; Learn More
+                                        &gt;&gt;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid">
+                    <p>The River Wye is perfect for the canoe hire, kayak hire, camping trips we offer.</p>
+                    <p>We also have instructors for school groups or individuals that would like training and river
+                        guides for groups that would like us to manage their whole canoe / kayak experience.</p>
+                </section>
+            </article>
+            <article>
+                <section id="page-links" class="container">
+                    <span class="page-link-item">
+                        <img src="" alt="Signpost Icon">
+                        <a> Local Information</a>
+                    </span>
+                </section>
+            </article>
         </div>
     </main>
+
+    <!-- Footer -->
+
     <footer>
         <div class="container">
             <hr>
