@@ -1,30 +1,162 @@
-main {
-  background-color: #FCF3F0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat' , sans-serif;
 }
 
-a {
-  display: block;
+#info-bar {
+  background-color: #666;
   color: white;
-  text-decoration: none;
 }
 
-a:hover {
-  color: white;
-  text-decoration: underline;
+#info-bar div {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info-bar div p {
+  padding-left: 0.5em;
 }
 
 nav {
   background-color: #3E5F74 !important;
   padding: 0 !important;
-  min-width: 11vh;
 }
 
 nav #logoLeftBank {
-  width: 70px;
+  width: 50px;
 }
 
-.main-content {
-  min-height: 109vh;
+nav ul.navbar-nav a.nav-link {
+  color: white !important;
+}
+
+main {
+  background-color: #FCF3F0;
+}
+
+#slide-1 {
+  min-height: 90vh;
+}
+
+#slide-1 #header-img-container {
+  padding: 0;
+}
+
+#slide-1 .intro-content div {
+  padding: 0.7em 0;
+}
+
+#slide-1 .intro-content #title h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 3rem;
+  color: #3E5F74;
+  font-weight: 600;
+  padding-right: 0.3em;
+}
+
+#slide-1 .intro-content #title h1 span {
+  font-weight: 300;
+}
+
+#slide-1 .intro-content .info-big, #slide-1 .intro-content .info-small {
+  font-family: 'Nunito', sans-serif;
+}
+
+#slide-1 .intro-content .info-big {
+  font-size: 1.5rem;
+}
+
+#slide-1 .intro-content .info-small {
+  font-size: 1.2rem;
+}
+
+#slide-1 .intro-content .btn {
+  font-size: 1.2rem;
+  border-radius: 5em;
+}
+
+#slide-1 .intro-content .btn-primary {
+  border: none;
+  padding: 0.5em 1.5em;
+  background-color: #3E5F74;
+  font-weight: bold;
+  margin-right: 3vw;
+}
+
+#slide-1 .intro-content .btn-outline-primary {
+  padding: 0.3em 0.8em;
+  border: 4px solid #3E5F74;
+  color: #3E5F74;
+}
+
+#slide-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 90vh;
+}
+
+#slide-2 h2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2.5rem;
+  color: #3E5F74;
+}
+
+#slide-2 .activity-images {
+  width: 90%;
+  margin: auto;
+}
+
+#slide-2 .activity-images .card {
+  border-radius: 2em;
+  background: black;
+  border: none;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+#slide-2 .activity-images .card h3 {
+  font-size: 1.8rem;
+}
+
+#slide-2 .activity-images .card p {
+  font-size: 0.9rem;
+}
+
+#slide-2 .activity-images .card p a {
+  color: white;
+  text-decoration: none;
+}
+
+#slide-2 .activity-images .card p a:hover {
+  text-decoration: underline;
+}
+
+#slide-2 .activity-images .card-img {
+  opacity: 0.5;
+}
+
+#list-links {
+  font-size: 1.5rem;
 }
 
 footer {
@@ -37,6 +169,18 @@ footer {
 footer hr {
   border: 1px solid white;
   opacity: 1;
+}
+
+footer .footer-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+footer .footer-content a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 footer .footer-content .linkGroup {
@@ -61,6 +205,6 @@ footer .licenseImage-container {
 }
 
 footer .licenseImage-container img {
-  width: 50%;
+  width: 250px;
 }
 /*# sourceMappingURL=styles.css.map */

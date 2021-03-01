@@ -1,37 +1,151 @@
 // Add google imports here
+// For main font, titles, larger text etc
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+// For secondary font, more detailed text etc
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 
 $primary: #3E5F74;
 $bg-main: #FCF3F0;
 // $bg-siderbar: #;
 
-
-main {
-    background-color: $bg-main;
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat' , sans-serif;
 }
 
-a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    &:hover {
-        color: white;
-        text-decoration: underline;
+// only shows on small breakpoint and above
+#info-bar {
+    background-color: #666;
+    color:white;
+    div {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            padding-left: 0.5em; 
+        }
     }
 }
 
 nav {
     background-color: $primary !important;
     padding: 0 !important;
-    min-width: 11vh;
     #logoLeftBank {
-        width: 70px;
+        width: 50px;
+    }
+    
+    ul.navbar-nav {
+        a.nav-link {
+            color: white !important;
+        }
     }
 }
 
-.main-content {
-    min-height: 109vh;
+main {
+    background-color: $bg-main;
+}
+
+#slide-1 {
+    min-height: 90vh;
+    #header-img-container {
+        padding: 0;
+    }
+    .intro-content {
+        div {
+            padding: 0.7em 0;
+        }
+        #title {
+            h1 {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 3rem;
+                color: $primary;
+                font-weight: 600;
+                padding-right: 0.3em;
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+        .info-big, .info-small{
+            font-family: 'Nunito', sans-serif;
+        }
+        .info-big {font-size: 1.5rem;}
+        .info-small {font-size: 1.2rem}
+        .btn {
+            font-size: 1.2rem;
+            border-radius: 5em;
+        }
+        .btn-primary {
+            border: none;
+            padding: 0.5em 1.5em;
+            background-color: $primary;
+            font-weight: bold;
+            margin-right: 3vw;
+        }
+        .btn-outline-primary {
+            padding: 0.3em 0.8em;
+            border: 4px solid $primary;
+            color: $primary;
+        }
+    }
+}
+
+
+
+// ---- Activities ----
+#slide-2 {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid blue;
+    min-height: 90vh;
+    h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 2.5rem;
+        color: $primary;
+    }
+    .activity-images {
+        // border: 4px solid black;
+        width: 90%;
+        margin: auto;
+        .card {
+            border-radius: 2em;
+            background: black;
+            border: none;
+            overflow: hidden;
+            // border: 3px solid red;
+            margin: 30px 0;
+            h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 0.9rem;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .card-img {
+            opacity: 0.5;  
+        }
+    }
+}
+
+#list-links {
+    font-size: 1.5rem;
 
 }
+
+// ---- Footer ----
+// MAKE IT DISPLAY FLEX COLUMN TO FIX LINK ISSUES
+
 footer {
     margin: 0;
     padding: 10px 0;
@@ -42,6 +156,17 @@ footer {
         opacity: 1;
     }
     .footer-content {
+        // mostly just a fix for the footer links
+    a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        border: 1px solid black;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
         .linkGroup {
             padding: 0.8em 0;
         }
@@ -57,8 +182,10 @@ footer {
         display: flex;
         justify-content: center;
         img {
-            width: 50%;
+            width: 250px;
         }
 
     }
 }
+
+// Add a media query where the flex direction in the footer changes
