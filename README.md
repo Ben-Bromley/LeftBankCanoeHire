@@ -3,7 +3,7 @@
 
 ---
 
-
+You can view the Figma project [here](https://www.figma.com/files/project/24930733/LeftBankCanoe).
 
 ---
 # Plan:
