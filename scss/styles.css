@@ -1,28 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat' , sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #info-bar {
   background-color: #666;
   color: white;
 }
-
 #info-bar div {
   max-width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #info-bar div p {
   padding-left: 0.5em;
 }
@@ -31,11 +27,9 @@ nav {
   background-color: #3E5F74 !important;
   padding: 0 !important;
 }
-
 nav #logoLeftBank {
   width: 50px;
 }
-
 nav ul.navbar-nav a.nav-link {
   color: white !important;
 }
@@ -44,88 +38,77 @@ main {
   background-color: #FCF3F0;
 }
 
-#slide-1 {
-  min-height: 90vh;
-}
-
-#slide-1 #header-img-container {
-  padding: 0;
-}
-
-#slide-1 .intro-content div {
-  padding: 0.7em 0;
-}
-
-#slide-1 .intro-content #title h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-size: 3rem;
-  color: #3E5F74;
-  font-weight: 600;
-  padding-right: 0.3em;
-}
-
-#slide-1 .intro-content #title h1 span {
-  font-weight: 300;
-}
-
-#slide-1 .intro-content .info-big, #slide-1 .intro-content .info-small {
-  font-family: 'Nunito', sans-serif;
-}
-
-#slide-1 .intro-content .info-big {
-  font-size: 1.5rem;
-}
-
-#slide-1 .intro-content .info-small {
-  font-size: 1.2rem;
-}
-
-#slide-1 .intro-content .btn {
+.btn {
   font-size: 1.2rem;
   border-radius: 5em;
 }
 
-#slide-1 .intro-content .btn-primary {
+.btn-primary {
   border: none;
   padding: 0.5em 1.5em;
   background-color: #3E5F74;
   font-weight: bold;
   margin-right: 3vw;
 }
+.btn-primary:hover {
+  background-color: #5a798b;
+}
 
-#slide-1 .intro-content .btn-outline-primary {
+.btn-outline-primary {
   padding: 0.3em 0.8em;
   border: 4px solid #3E5F74;
   color: #3E5F74;
 }
-
-#slide-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 90vh;
+.btn-outline-primary:hover {
+  border: 4px solid #3E5F74;
+  background-color: #3E5F74;
 }
 
+#slide-1 {
+  min-height: 90vh;
+}
+#slide-1 #header-img-container {
+  padding: 0;
+}
+#slide-1 .intro-content div {
+  padding: 0.7em 0;
+}
+#slide-1 .intro-content #title h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  color: #3E5F74;
+  font-weight: 600;
+  padding-right: 0.3em;
+}
+#slide-1 .intro-content #title h1 span {
+  font-weight: 300;
+}
+#slide-1 .intro-content .info-big, #slide-1 .intro-content .info-small {
+  font-family: "Nunito", sans-serif;
+}
+#slide-1 .intro-content .info-big {
+  font-size: 1.5rem;
+}
+#slide-1 .intro-content .info-small {
+  font-size: 1.2rem;
+}
+
+#slide-2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
 #slide-2 h2 {
   text-align: center;
   font-weight: 200;
   font-size: 2.5rem;
   color: #3E5F74;
 }
-
 #slide-2 .activity-images {
   width: 90%;
   margin: auto;
 }
-
 #slide-2 .activity-images .card {
   border-radius: 2em;
   background: black;
@@ -133,30 +116,79 @@ main {
   overflow: hidden;
   margin: 30px 0;
 }
-
 #slide-2 .activity-images .card h3 {
   font-size: 1.8rem;
 }
-
 #slide-2 .activity-images .card p {
   font-size: 0.9rem;
 }
-
 #slide-2 .activity-images .card p a {
   color: white;
   text-decoration: none;
 }
-
 #slide-2 .activity-images .card p a:hover {
   text-decoration: underline;
 }
-
 #slide-2 .activity-images .card-img {
   opacity: 0.5;
 }
 
-#list-links {
-  font-size: 1.5rem;
+#page-links {
+  font-size: 1.3rem;
+}
+#page-links a {
+  color: #3E5F74;
+  text-decoration: none;
+}
+#page-links a:hover {
+  text-decoration: underline;
+}
+#page-links a img {
+  margin-right: 1rem;
+}
+
+#social-links a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #3E5F74;
+}
+#social-links a:hover {
+  text-decoration: underline;
+}
+#social-links a i {
+  margin: 0 0.2em;
+  margin-right: 1.7rem;
+  font-size: 3rem;
+}
+
+#hire-form {
+  margin: 2vh 0;
+  padding: 5%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: lightgrey;
+  color: #3E5F74;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+#hire-form #form-title {
+  font-size: 2.5rem;
+}
+#hire-form label {
+  width: 100%;
+}
+#hire-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  border: 1px solid black;
+}
+#hire-form button {
+  font-size: 1.4rem;
+  padding: 0.5em 2em;
 }
 
 footer {
@@ -165,46 +197,34 @@ footer {
   background-color: #3E5F74;
   color: #fff;
 }
-
 footer hr {
   border: 1px solid white;
   opacity: 1;
 }
-
 footer .footer-content a {
-  display: block;
   color: white;
   text-decoration: none;
-  border: 1px solid black;
 }
-
 footer .footer-content a:hover {
   color: white;
   text-decoration: underline;
 }
-
 footer .footer-content .linkGroup {
   padding: 0.8em 0;
 }
-
 footer .footer-content .copyright {
   padding-top: 20px;
   color: #eee;
   max-width: 60%;
 }
-
 footer .licenseImage-container {
   margin: 0 auto;
-  max-width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  max-width: 70%;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+}
+footer .licenseImage-container img {
+  width: 100px;
 }
 
-footer .licenseImage-container img {
-  width: 250px;
-}
 /*# sourceMappingURL=styles.css.map */
