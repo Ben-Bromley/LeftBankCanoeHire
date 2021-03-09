@@ -23,17 +23,13 @@ You can view the Figma project [here](https://www.figma.com/files/project/249307
 ## Phase 3: Drafting Build
 
 - [x] 1st Draft
-
 - [x] 1st Draft Review
-
      - [ ] Return headers to original bree-serif font
      - [ ] Insert updated images and license logo
      - [ ] Replace link images with icons
      - [ ] Add Dropdowns and active page indicator
      - [ ] Embed Youtube Link
      - [ ] Embed facebook feed above footer
-
-
 - [ ] 2nd Draft
 - [ ] 2nd Draft Review
 
