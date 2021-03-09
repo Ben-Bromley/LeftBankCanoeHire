@@ -3,7 +3,8 @@
 
 ---
 
-You can view the Figma project [here](https://www.figma.com/files/project/24930733/LeftBankCanoe).
+- You can view the Figma project [here](https://www.figma.com/files/project/24930733/LeftBankCanoe).
+- You can view the original design proposal [here](https://docs.google.com/presentation/d/1PWN0VW3nIfn-EHy35xhY78X3SZEDh-8Zp8Qg7f8cwCE/edit?usp=sharing)
 
 ---
 # Plan:
@@ -22,8 +23,14 @@ You can view the Figma project [here](https://www.figma.com/files/project/249307
 
 ## Phase 3: Drafting Build
 
-- [ ] 1st Draft
-- [ ] 1st Draft Review
+- [x] 1st Draft
+- [x] 1st Draft Review
+     - [x] Return headers to original bree-serif font
+     - [ ] Insert updated images and license logo
+     - [ ] Replace link images with icons
+     - [ ] Add Dropdowns and active page indicator
+     - [ ] Embed Youtube Link
+     - [ ] Embed facebook feed above footer
 - [ ] 2nd Draft
 - [ ] 2nd Draft Review
 
