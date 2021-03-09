@@ -27,7 +27,7 @@
 - [x] 1st Draft Review
      - [x] Return headers to original bree-serif font
      - [ ] Insert updated images and license logo
-     - [ ] Replace link images with icons
+     - [x] Replace link images with icons
      - [ ] Add Dropdowns and active page indicator
      - [ ] Embed Youtube Link
      - [ ] Embed facebook feed above footer
