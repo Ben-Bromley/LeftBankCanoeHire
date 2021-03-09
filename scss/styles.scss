@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 // For secondary font, more detailed text etc
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+// Original Header Font
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-// This is a note to test the live sass compiler
+
 
 $primary: #3E5F74;
 $primary-hover: #5a798b;
@@ -17,7 +19,12 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: 'Montserrat' , sans-serif;
+    h1, h2, h3, a, button {
+        font-family: 'Bree Serif' , sans-serif;
+    }
+    p {
+        font-family: 'Nunito' , sans-serif;
+    }
 }
 
 // only shows on small breakpoint and above
@@ -93,10 +100,9 @@ main {
                 flex-wrap: wrap;
                 font-size: 3rem;
                 color: $primary;
-                font-weight: 600;
-                padding-right: 0.3em;
+                font-weight: bolder;
                 span {
-                    font-weight: 300;
+                    font-weight: normal;
                 }
             }
         }
@@ -155,33 +161,20 @@ main {
 
 // ---- page links ----
 
-#page-links {
+#page-links, #social-links {
     font-size: 1.3rem;
     a {
+        // border: 1px solid red;
         color: $primary;
         text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-        img {
-            margin-right: 1rem;
-        }
-    }
-}
-
-#social-links {
-
-    a {
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: $primary;
         &:hover {
             text-decoration: underline;
         }
         i {
-            margin: 0 0.2em;
-            margin-right: 1.7rem;
-            font-size: 3rem;
+            text-align: center;
+            // border: 1px solid blue;
+            font-size: 2.5rem;
+            width: 5rem;
         }
     }
 }

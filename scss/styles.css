@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+}
+body h1, body h2, body h3, body a, body button {
+  font-family: "Bree Serif", sans-serif;
+}
+body p {
+  font-family: "Nunito", sans-serif;
 }
 
 #info-bar {
@@ -78,11 +84,10 @@ main {
   flex-wrap: wrap;
   font-size: 3rem;
   color: #3E5F74;
-  font-weight: 600;
-  padding-right: 0.3em;
+  font-weight: bolder;
 }
 #slide-1 .intro-content #title h1 span {
-  font-weight: 300;
+  font-weight: normal;
 }
 #slide-1 .intro-content .info-big, #slide-1 .intro-content .info-small {
   font-family: "Nunito", sans-serif;
@@ -133,32 +138,20 @@ main {
   opacity: 0.5;
 }
 
-#page-links {
+#page-links, #social-links {
   font-size: 1.3rem;
 }
-#page-links a {
+#page-links a, #social-links a {
   color: #3E5F74;
   text-decoration: none;
 }
-#page-links a:hover {
+#page-links a:hover, #social-links a:hover {
   text-decoration: underline;
 }
-#page-links a img {
-  margin-right: 1rem;
-}
-
-#social-links a {
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: #3E5F74;
-}
-#social-links a:hover {
-  text-decoration: underline;
-}
-#social-links a i {
-  margin: 0 0.2em;
-  margin-right: 1.7rem;
-  font-size: 3rem;
+#page-links a i, #social-links a i {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 5rem;
 }
 
 #hire-form {
