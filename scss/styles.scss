@@ -17,8 +17,14 @@ html {
     scroll-behavior: smooth;
 }
 
+div {
+    max-width: 100%;
+    // border: 1px solid red;
+}
+
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    box-sizing: border-box;
     h1, h2, h3, a, button {
         font-family: 'Bree Serif' , sans-serif;
     }
@@ -26,6 +32,7 @@ body {
         font-family: 'Nunito' , sans-serif;
     }
 }
+
 
 // only shows on small breakpoint and above
 #info-bar {
@@ -61,7 +68,7 @@ main {
 }
 
 .btn {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: 5em;
 }
 .btn-primary {
@@ -86,19 +93,20 @@ main {
 }
 
 #slide-1 {
-    min-height: 90vh;
+    // to take up most of initial view
+    min-height: 92vh;
     #header-img-container {
-        padding: 0;
+        width: 100vw !important;
     }
     .intro-content {
         div {
-            padding: 0.7em 0;
+            padding: 0.3em 0;
         }
         #title {
             h1 {
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 3rem;
+                font-size: 2.8rem;
                 color: $primary;
                 font-weight: bolder;
                 span {
@@ -185,6 +193,7 @@ main {
     margin: 2vh 0;
     padding: 5%;
     min-height: 90vh;
+    min-width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,12 +221,31 @@ main {
     }
 }
 
+// ----- for youtube iframe ---
+
+#leftbank-youtube {
+    width: 100vw;
+    height: 56.25vw;
+    max-width: 840px;
+    max-height: 472.5px; 
+    margin: 20px 0;
+}
+
+#fb-feed {
+    margin: 20px 0;
+}
+
+div {
+    // border: 1px solid red;
+}
+
+
 // ---- Footer ----
 // MAKE IT DISPLAY FLEX COLUMN TO FIX LINK ISSUES
 
 footer {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 5%;
     background-color: $primary;
     color: #fff;
     hr {
