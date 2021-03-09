@@ -3,7 +3,8 @@
 
 ---
 
-You can view the Figma project [here](https://www.figma.com/files/project/24930733/LeftBankCanoe).
+- You can view the Figma project [here](https://www.figma.com/files/project/24930733/LeftBankCanoe).
+- You can view the original design proposal [here](https://docs.google.com/presentation/d/1PWN0VW3nIfn-EHy35xhY78X3SZEDh-8Zp8Qg7f8cwCE/edit?usp=sharing)
 
 ---
 # Plan:
