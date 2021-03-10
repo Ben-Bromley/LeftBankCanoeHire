@@ -95,6 +95,9 @@ main {
 #slide-1 #header-img-container img {
   width: 100%;
 }
+#slide-1 .intro-content {
+  width: 700px;
+}
 #slide-1 .intro-content div {
   padding: 0.3em 0;
 }
@@ -168,15 +171,17 @@ main {
 #page-links, #social-links {
   font-size: 1.3rem;
 }
-#page-links a, #social-links a {
-  margin: 10px;
+#page-links span.page-link-item, #social-links span.page-link-item {
+  padding: 12px 0;
+}
+#page-links span.page-link-item a, #social-links span.page-link-item a {
   color: #3E5F74;
   text-decoration: none;
 }
-#page-links a:hover, #social-links a:hover {
+#page-links span.page-link-item a:hover, #social-links span.page-link-item a:hover {
   text-decoration: underline;
 }
-#page-links a i, #social-links a i {
+#page-links span.page-link-item a i, #social-links span.page-link-item a i {
   text-align: center;
   font-size: 2.5rem;
   width: 5rem;
@@ -185,8 +190,8 @@ main {
 #hire-form {
   margin: 2vh 0;
   padding: 5%;
-  min-height: 90vh;
-  min-width: 60vw;
+  min-height: 650px;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,7 +215,7 @@ main {
 }
 #hire-form button {
   font-size: 1.4rem;
-  padding: 0.5em 2em;
+  padding: 0.4em 1.5em;
 }
 
 #leftbank-youtube {
@@ -229,9 +234,11 @@ footer {
   margin: 0;
   padding: 10px 5%;
   background-color: #3E5F74;
-  color: #eee hr;
-  color-border: 1px solid white;
-  color-opacity: 1;
+  color: #eee;
+}
+footer hr {
+  border: 1px solid white;
+  opacity: 1;
 }
 footer .footer-content a {
   color: #eee;

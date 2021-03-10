@@ -131,6 +131,7 @@ main {
         }
     }
     .intro-content {
+        width:700px;
         div {
             padding: 0.3em 0;
         }
@@ -210,19 +211,19 @@ main {
 
 #page-links, #social-links {
     font-size: 1.3rem;
-    a {
-        margin: 10px;
-        // border: 1px solid red;
-        color: $primary;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-        i {
-            text-align: center;
-            // border: 1px solid blue;
-            font-size: 2.5rem;
-            width: 5rem;
+    span.page-link-item {
+        padding: 12px 0;
+        a {
+            color: $primary;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            i {
+                text-align: center;
+                font-size: 2.5rem;
+                width: 5rem;
+            }
         }
     }
 }
@@ -232,8 +233,8 @@ main {
 #hire-form {
     margin: 2vh 0;
     padding: 5%;
-    min-height: 90vh;
-    min-width: 60vw;
+    min-height: 650px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +257,7 @@ main {
     }
     button {
         font-size: 1.4rem;
-        padding: 0.5em 2em;
+        padding: 0.4em 1.5em;
     
     }
 }
@@ -282,7 +283,7 @@ footer {
     margin: 0;
     padding: 10px 5%;
     background-color: $primary;
-    color: $text-light
+    color: $text-light;
     hr {
         border: 1px solid white;
         opacity: 1;
