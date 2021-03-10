@@ -29,7 +29,7 @@ body p {
 #info-bar div {
   max-width: 50%;
   display: flex;
-  margin: 0 1.6em;
+  margin: 0 1.2em;
 }
 #info-bar div i {
   font-size: 1.2rem;
@@ -87,9 +87,13 @@ main {
 
 #slide-1 {
   min-height: 92vh;
+  padding: 0;
 }
 #slide-1 #header-img-container {
-  width: 100vw !important;
+  width: 100%;
+}
+#slide-1 #header-img-container img {
+  width: 100%;
 }
 #slide-1 .intro-content div {
   padding: 0.3em 0;
@@ -117,7 +121,7 @@ main {
 #slide-2 {
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 #slide-2 h2 {
   text-align: center;
@@ -127,6 +131,8 @@ main {
 }
 #slide-2 .activity-images {
   width: 90%;
+  min-width: 310px;
+  max-width: 400px;
   margin: auto;
 }
 #slide-2 .activity-images .card {
@@ -152,13 +158,19 @@ main {
 #slide-2 .activity-images .card-img {
   opacity: 0.5;
 }
+#slide-2 #river-description {
+  max-width: 50ch;
+}
+#slide-2 #river-description p {
+  font-weight: 600;
+  color: #3E5F74;
+}
 
 #page-links, #social-links {
   font-size: 1.3rem;
 }
 #page-links a, #social-links a {
   margin: 10px;
-  border: 1px solid red;
   color: #3E5F74;
   text-decoration: none;
 }
@@ -167,7 +179,6 @@ main {
 }
 #page-links a i, #social-links a i {
   text-align: center;
-  border: 1px solid blue;
   font-size: 2.5rem;
   width: 5rem;
 }

@@ -11,7 +11,16 @@
 $primary: #3E5F74;
 $primary-hover: #5a798b;
 $bg-main: #FCF3F0;
-// $bg-siderbar: #;
+
+// using bootstrap breakpoints for responsive design
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 html {
     scroll-behavior: smooth;
@@ -43,7 +52,7 @@ body {
     div {
         max-width: 50%;
         display: flex;
-        margin: 0 1.6em;
+        margin: 0 1.2em;
         // border: 1px solid red;
         i {
             font-size: 1.2rem;
@@ -107,8 +116,12 @@ main {
 #slide-1 {
     // to take up most of initial view
     min-height: 92vh;
+    padding: 0;
     #header-img-container {
-        width: 100vw !important;
+        width: 100%;
+        img {
+            width: 100%;
+        }
     }
     .intro-content {
         div {
@@ -141,7 +154,7 @@ main {
     display: flex;
     flex-direction: column;
     // border: 1px solid blue;
-    min-height: 90vh;
+    min-height: 80vh;
     h2 {
         text-align: center;
         font-weight: 200;
@@ -151,6 +164,8 @@ main {
     .activity-images {
         // border: 4px solid black;
         width: 90%;
+        min-width: 310px;
+        max-width: 400px;
         margin: auto;
         .card {
             border-radius: 2em;
@@ -177,6 +192,14 @@ main {
             opacity: 0.5;  
         }
     }
+    #river-description {
+        // border: 1px solid black;
+        max-width: 50ch;
+        p {
+            font-weight: 600;
+            color: $primary;
+        }
+    }
 }
 
 // ---- page links ----
@@ -185,7 +208,7 @@ main {
     font-size: 1.3rem;
     a {
         margin: 10px;
-        border: 1px solid red;
+        // border: 1px solid red;
         color: $primary;
         text-decoration: none;
         &:hover {
@@ -193,7 +216,7 @@ main {
         }
         i {
             text-align: center;
-            border: 1px solid blue;
+            // border: 1px solid blue;
             font-size: 2.5rem;
             width: 5rem;
         }
