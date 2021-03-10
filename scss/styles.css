@@ -85,43 +85,56 @@ main {
   background-color: #3E5F74;
 }
 
-#slide-1 {
+#row-slide-1 {
+  margin: 0;
+}
+#row-slide-1 #slide-1 {
   min-height: 92vh;
   padding: 0;
 }
-#slide-1 #header-img-container {
+#row-slide-1 #slide-1 #header-img-container {
   width: 100%;
 }
-#slide-1 #header-img-container img {
+#row-slide-1 #slide-1 #header-img-container img {
   width: 100%;
 }
-#slide-1 .intro-content {
-  width: 700px;
+#row-slide-1 #slide-1 .intro-content {
+  max-width: 700px;
 }
-#slide-1 .intro-content div {
+#row-slide-1 #slide-1 .intro-content div {
   padding: 0.3em 0;
 }
-#slide-1 .intro-content #title h1 {
+#row-slide-1 #slide-1 .intro-content #title h1 {
   display: flex;
   flex-wrap: wrap;
   font-size: 2.8rem;
   color: #3E5F74;
   font-weight: bolder;
 }
-#slide-1 .intro-content #title h1 span {
+#row-slide-1 #slide-1 .intro-content #title h1 span {
   font-weight: normal;
 }
-#slide-1 .intro-content .info-big, #slide-1 .intro-content .info-small {
+#row-slide-1 #slide-1 .intro-content .info-big, #row-slide-1 #slide-1 .intro-content .info-small {
   font-family: "Nunito", sans-serif;
 }
-#slide-1 .intro-content .info-big {
+#row-slide-1 #slide-1 .intro-content .info-big {
   font-size: 1.5rem;
 }
-#slide-1 .intro-content .info-small {
+#row-slide-1 #slide-1 .intro-content .info-small {
   font-size: 1.2rem;
+}
+#row-slide-1 #slide-1 #river-description {
+  margin: 20px 0;
+  max-width: 50ch;
+}
+#row-slide-1 #slide-1 #river-description p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #3E5F74;
 }
 
 #slide-2 {
+  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 70vh;
@@ -160,12 +173,10 @@ main {
 #slide-2 .activity-images .card-img {
   opacity: 0.5;
 }
-#slide-2 #river-description {
-  max-width: 50ch;
-}
-#slide-2 #river-description p {
-  font-weight: 600;
-  color: #3E5F74;
+
+#row-slide-3 {
+  width: 100vw;
+  margin: 0 auto;
 }
 
 #page-links, #social-links {
@@ -187,11 +198,10 @@ main {
   width: 5rem;
 }
 
-#hire-form {
-  margin: 2vh 0;
+#form-container #hire-form {
   padding: 5%;
-  min-height: 650px;
-  min-width: 500px;
+  min-height: 550px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,19 +211,19 @@ main {
   border: 1px solid black;
   border-radius: 1em;
 }
-#hire-form #form-title {
+#form-container #hire-form #form-title {
   font-size: 2.5rem;
 }
-#hire-form label {
+#form-container #hire-form label {
   width: 100%;
 }
-#hire-form input {
+#form-container #hire-form input {
   width: 100%;
   padding: 0.5rem;
   border-radius: 0.5em;
   border: 1px solid black;
 }
-#hire-form button {
+#form-container #hire-form button {
   font-size: 1.4rem;
   padding: 0.4em 1.5em;
 }

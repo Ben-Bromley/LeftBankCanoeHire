@@ -120,18 +120,21 @@ main {
     }
 }
 
-#slide-1 {
-    // to take up most of initial view
-    min-height: 92vh;
-    padding: 0;
-    #header-img-container {
+#row-slide-1 {
+    margin: 0;
+    #slide-1 {
+        // to take up most of initial view
+        min-height: 92vh;
+        padding: 0;
+        
+        #header-img-container {
         width: 100%;
         img {
             width: 100%;
         }
     }
     .intro-content {
-        width:700px;
+        max-width: 700px;
         div {
             padding: 0.3em 0;
         }
@@ -153,12 +156,24 @@ main {
         .info-big {font-size: 1.5rem;}
         .info-small {font-size: 1.2rem}
     }
+        #river-description {
+            // border: 1px solid black;
+            margin: 20px 0;
+            max-width: 50ch;
+            p {
+                font-weight: 600;
+                font-size:1.2rem;
+                color: $primary;
+            }
+        }
+    }
 }
 
 
 
 // ---- Activities ----
 #slide-2 {
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 70vh;
@@ -197,14 +212,14 @@ main {
             opacity: 0.5;  
         }
     }
-    #river-description {
-        // border: 1px solid black;
-        max-width: 50ch;
-        p {
-            font-weight: 600;
-            color: $primary;
-        }
-    }
+}
+
+// ---- slide 3 container ---- 
+
+#row-slide-3 {
+    width: 100vw;
+    // centers the container properly
+    margin: 0 auto;
 }
 
 // ---- page links ----
@@ -230,35 +245,37 @@ main {
 
 // ---- Form ----
 
-#hire-form {
-    margin: 2vh 0;
-    padding: 5%;
-    min-height: 650px;
-    min-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background: lightgrey;
-    color: $primary;
-    border: 1px solid black;
-    border-radius: 1em;
-    #form-title {
-        font-size: 2.5rem;
-    }
-    label {
+#form-container {
+    // border: 1px solid blue;
+    #hire-form {
+        padding: 5%;
+        min-height: 550px;
+        // min-width: 350px;
         width: 100%;
-    }
-    input {
-        width: 100%;
-        padding: 0.5rem;
-        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: lightgrey;
+        color: $primary;
         border: 1px solid black;
-    }
-    button {
-        font-size: 1.4rem;
-        padding: 0.4em 1.5em;
-    
+        border-radius: 1em;
+        #form-title {
+            font-size: 2.5rem;
+        }
+        label {
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 0.5em;
+            border: 1px solid black;
+        }
+        button {
+            font-size: 1.4rem;
+            padding: 0.4em 1.5em;
+        }
     }
 }
 
