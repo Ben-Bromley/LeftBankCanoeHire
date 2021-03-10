@@ -34,6 +34,12 @@
 - [ ] 2nd Draft
 - [ ] 2nd Draft Review
 
+- [ ] Responsive Design
+    - [ ] change font sizes to variables
+    - [ ] change variables based on media queries
+    - [ ] create bootstrap grid
+
+
 ## Phase 4: Final Product
 
 - [ ] Space for All content?
