@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Add google imports here
 // For main font, titles, larger text etc
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
@@ -7,12 +9,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 
-
+// Colours
 $primary: #3E5F74;
 $primary-hover: #5a798b;
 $bg-main: #FCF3F0;
+$text-light: #eee;
 
-// using bootstrap breakpoints for responsive design
+//font sizes
+// $h1-size: 2.8rem;
+
+// boostrap breakpoints
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -21,6 +27,7 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 );
+
 
 html {
     scroll-behavior: smooth;
@@ -47,7 +54,7 @@ body {
 #info-bar {
     background-color: #666;
     color:white;
-    padding: 5px 10%;
+    padding: 5px 8%;
     align-items: center;
     div {
         max-width: 50%;
@@ -62,7 +69,7 @@ body {
             font-family: 'Nunito', sans-serif;
             text-decoration: none;
             padding-left: 0.7em; 
-            color: white;
+            color: $text-light;
         }
     }
     #envelope {
@@ -79,7 +86,7 @@ nav {
     
     ul.navbar-nav {
         a.nav-link {
-            color: white !important;
+            color:$text-light!important;
         }
     }
 }
@@ -153,8 +160,8 @@ main {
 #slide-2 {
     display: flex;
     flex-direction: column;
-    // border: 1px solid blue;
-    min-height: 80vh;
+    min-height: 70vh;
+
     h2 {
         text-align: center;
         font-weight: 200;
@@ -162,7 +169,6 @@ main {
         color: $primary;
     }
     .activity-images {
-        // border: 4px solid black;
         width: 90%;
         min-width: 310px;
         max-width: 400px;
@@ -170,17 +176,15 @@ main {
         .card {
             border-radius: 2em;
             background: black;
-            border: none;
-            overflow: hidden;
-            // border: 3px solid red;
-            margin: 30px 0;
+            margin: 15px 0;
+            overflow: scroll;
             h3 {
                 font-size: 1.8rem;
             }
             p {
                 font-size: 0.9rem;
                 a {
-                    color: white;
+                    color: $text-light;
                     text-decoration: none;
                     &:hover {
                         text-decoration: underline;
@@ -278,7 +282,7 @@ footer {
     margin: 0;
     padding: 10px 5%;
     background-color: $primary;
-    color: #fff;
+    color: $text-light
     hr {
         border: 1px solid white;
         opacity: 1;
@@ -286,10 +290,10 @@ footer {
     .footer-content {
         // mostly just a fix for the footer links
     a {
-        color: white;
+        color: $text-light;
         text-decoration: none;
         &:hover {
-            color: white;
+            color: $text-light;
             text-decoration: underline;
         }
     }
@@ -298,7 +302,7 @@ footer {
         }
         .copyright {
             padding-top: 20px;
-            color: #eee;
+            color: $text-light;
             max-width: 60%;
         }
     }
@@ -314,4 +318,17 @@ footer {
     }
 }
 
+
 // Add a media query where the flex direction in the footer changes
+@media only screen and (min-width: map.get($grid-breakpoints, "sm")) {
+    html {
+        font-size: 115%;
+        #info-bar {
+            font-size: 90%;
+        }
+    }
+    #slide-2-title {
+        // display:none;
+        font-size: 2rem !important;
+    }
+}

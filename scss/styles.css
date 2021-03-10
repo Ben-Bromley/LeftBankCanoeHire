@@ -23,7 +23,7 @@ body p {
 #info-bar {
   background-color: #666;
   color: white;
-  padding: 5px 10%;
+  padding: 5px 8%;
   align-items: center;
 }
 #info-bar div {
@@ -38,7 +38,7 @@ body p {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   padding-left: 0.7em;
-  color: white;
+  color: #eee;
 }
 #info-bar #envelope {
   align-items: center;
@@ -52,7 +52,7 @@ nav #logoLeftBank {
   width: 50px;
 }
 nav ul.navbar-nav a.nav-link {
-  color: white !important;
+  color: #eee !important;
 }
 
 main {
@@ -121,7 +121,7 @@ main {
 #slide-2 {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 #slide-2 h2 {
   text-align: center;
@@ -138,9 +138,8 @@ main {
 #slide-2 .activity-images .card {
   border-radius: 2em;
   background: black;
-  border: none;
-  overflow: hidden;
-  margin: 30px 0;
+  margin: 15px 0;
+  overflow: scroll;
 }
 #slide-2 .activity-images .card h3 {
   font-size: 1.8rem;
@@ -149,7 +148,7 @@ main {
   font-size: 0.9rem;
 }
 #slide-2 .activity-images .card p a {
-  color: white;
+  color: #eee;
   text-decoration: none;
 }
 #slide-2 .activity-images .card p a:hover {
@@ -230,18 +229,16 @@ footer {
   margin: 0;
   padding: 10px 5%;
   background-color: #3E5F74;
-  color: #fff;
-}
-footer hr {
-  border: 1px solid white;
-  opacity: 1;
+  color: #eee hr;
+  color-border: 1px solid white;
+  color-opacity: 1;
 }
 footer .footer-content a {
-  color: white;
+  color: #eee;
   text-decoration: none;
 }
 footer .footer-content a:hover {
-  color: white;
+  color: #eee;
   text-decoration: underline;
 }
 footer .footer-content .linkGroup {
@@ -260,4 +257,17 @@ footer .licenseImage-container {
 }
 footer .licenseImage-container img {
   width: 100px;
+}
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 115%;
+  }
+  html #info-bar {
+    font-size: 90%;
+  }
+
+  #slide-2-title {
+    font-size: 2rem !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
