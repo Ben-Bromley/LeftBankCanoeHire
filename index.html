@@ -25,16 +25,16 @@
 </head>
 
 <body>
-    <div id="info-bar" class="container-fluid d-none d-sm-flex justify-content-evenly align-items-center p-1">
-        <div id="phone-num" class="d-flex justify-content-between">
+    <div id="info-bar" class="container-fluid d-none d-sm-flex justify-content-end align-items-center">
+        <div id="phone-num">
             <i class="fa fa-phone"></i>
             <!-- href tel attribute from original site :) -->
-            <p class="m-0"><a href="tel:01432264807">01432 264 807</a></p>
+            <a href="tel:01432264807">01432 264 807</a>
         </div>
         <div id="envelope">
             <i class="fa fa-envelope"></i>
             <!-- clickable link to email :) -->
-            <p class="m-0"><a href="mailto:enquiries@leftbankcanoe.co.uk">enquiries@leftbankcanoe.co.uk</a></p>
+            <a href="mailto:enquiries@leftbankcanoe.co.uk">enquiries@leftbankcanoe.co.uk</a>
         </div>
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark p-0">
@@ -212,11 +212,13 @@
                 </form>
             </div>
         </article>
-        <div class="container d-flex justify-content-center">
-            <iframe id="leftbank-youtube" src="https://www.youtube.com/embed/RgEqtIlUsi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="container d-flex justify-content-evenly">
-            <iframe id="fb-feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleftbankcanoehire&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div class="d-block d-m-flex">
+            <div class="container d-flex justify-content-center">
+                <iframe id="leftbank-youtube" src="https://www.youtube.com/embed/RgEqtIlUsi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <iframe id="fb-feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleftbankcanoehire&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
         </div>
     </main>
     <!-- Footer -->
