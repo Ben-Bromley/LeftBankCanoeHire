@@ -23,15 +23,25 @@ body p {
 #info-bar {
   background-color: #666;
   color: white;
+  padding: 5px 10%;
+  align-items: center;
 }
 #info-bar div {
   max-width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 1.6em;
 }
-#info-bar div p {
-  padding-left: 0.5em;
+#info-bar div i {
+  font-size: 1.2rem;
+}
+#info-bar div a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  padding-left: 0.7em;
+  color: white;
+}
+#info-bar #envelope {
+  align-items: center;
 }
 
 nav {
@@ -147,6 +157,8 @@ main {
   font-size: 1.3rem;
 }
 #page-links a, #social-links a {
+  margin: 10px;
+  border: 1px solid red;
   color: #3E5F74;
   text-decoration: none;
 }
@@ -155,6 +167,7 @@ main {
 }
 #page-links a i, #social-links a i {
   text-align: center;
+  border: 1px solid blue;
   font-size: 2.5rem;
   width: 5rem;
 }

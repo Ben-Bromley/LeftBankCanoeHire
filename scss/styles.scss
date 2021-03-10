@@ -38,14 +38,26 @@ body {
 #info-bar {
     background-color: #666;
     color:white;
+    padding: 5px 10%;
+    align-items: center;
     div {
         max-width: 50%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        p {
-            padding-left: 0.5em; 
+        margin: 0 1.6em;
+        // border: 1px solid red;
+        i {
+            font-size: 1.2rem;
         }
+        a {
+            // border: 1px solid blue;
+            font-family: 'Nunito', sans-serif;
+            text-decoration: none;
+            padding-left: 0.7em; 
+            color: white;
+        }
+    }
+    #envelope {
+        align-items: center;
     }
 }
 
@@ -172,7 +184,8 @@ main {
 #page-links, #social-links {
     font-size: 1.3rem;
     a {
-        // border: 1px solid red;
+        margin: 10px;
+        border: 1px solid red;
         color: $primary;
         text-decoration: none;
         &:hover {
@@ -180,7 +193,7 @@ main {
         }
         i {
             text-align: center;
-            // border: 1px solid blue;
+            border: 1px solid blue;
             font-size: 2.5rem;
             width: 5rem;
         }
@@ -234,11 +247,6 @@ main {
 #fb-feed {
     margin: 20px 0;
 }
-
-div {
-    // border: 1px solid red;
-}
-
 
 // ---- Footer ----
 // MAKE IT DISPLAY FLEX COLUMN TO FIX LINK ISSUES
