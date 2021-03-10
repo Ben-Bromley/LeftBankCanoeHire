@@ -29,8 +29,8 @@
      - [ ] Insert updated images and license logo
      - [x] Replace link images with icons
      - [ ] Add Dropdowns and active page indicator
-     - [ ] Embed Youtube Link
-     - [ ] Embed facebook feed above footer
+     - [x] Embed Youtube Link
+     - [x] Embed facebook feed above footer
 - [ ] 2nd Draft
 - [ ] 2nd Draft Review
 
