@@ -11,6 +11,7 @@
 
 // Colours
 $primary: #3E5F74;
+$primary-accent: #cbdbdb;
 $primary-hover: #5a798b;
 $bg-main: #FCF3F0;
 $text-light: #eee;
@@ -38,7 +39,12 @@ div {
     // border: 1px solid red;
 }
 
+.container-fluid {
+    margin: 0 auto;
+}
+
 body {
+    background-color: $bg-main;
     overflow-x: hidden; 
     box-sizing: border-box;
     h1, h2, h3, a, button {
@@ -46,47 +52,90 @@ body {
     }
     p {
         font-family: 'Nunito' , sans-serif;
+        font-size: 1.3rem;
+        color: $primary;
     }
 }
 
 
-// only shows on small breakpoint and above
-#info-bar {
-    background-color: #666;
-    color:white;
-    padding: 5px 8%;
-    align-items: center;
-    div {
-        max-width: 50%;
-        display: flex;
-        margin: 0 1.2em;
-        // border: 1px solid red;
-        i {
-            font-size: 1.2rem;
-        }
-        a {
-            // border: 1px solid blue;
-            font-family: 'Nunito', sans-serif;
-            text-decoration: none;
-            padding-left: 0.7em; 
-            color: $text-light;
-        }
-    }
-    #envelope {
+header {
+    background-color: $primary;
+    #info-bar {
+        background-color: $primary;
+        border-bottom: 3px solid $primary-accent;
+        color:white;
+        padding: 3px 2%;
         align-items: center;
+        min-height: 2rem;
+        height: 5vh;
+        div {
+            max-width: 50%;
+            display: flex;
+            margin: 0 0.5em;
+            i {
+                font-size: 1rem;
+            }
+            a {
+                font-family: 'Nunito', sans-serif;
+                text-decoration: none;
+                padding-left: 0.4em; 
+                color: $text-light;
+                 font-size: 1rem;
+            }
+        }
+        #envelope {
+            align-items: center;
+        }
     }
-}
-
-nav {
-    background-color: $primary !important;
-    padding: 0 !important;
-    #logoLeftBank {
-        width: 50px;
+    #header-img-container {
+        min-height: 10vh;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 1.5em;
+        }
     }
     
-    ul.navbar-nav {
-        a.nav-link {
-            color:$text-light!important;
+    #logoLeftBank {
+        position: absolute;
+        z-index: 2;
+        top: 4vh;
+        left: 2vw;
+        width: 22vw;
+        min-width: 140px;
+        max-width: 180px;
+    }
+
+    #adventureLicense {
+        position: absolute;
+        z-index: 2;
+        top: 4vh;
+        right: 2vw;
+        // combination of a dynamic width and max/min ,
+        // gives lots of control over image sizes
+        width: 22vw;
+        min-width: 120px;
+        max-width: 170px;
+        background: $primary;
+        // temporary padding
+        padding: 4px 0 0 7px;
+        border-radius: 50%;
+        border: 5px solid $primary-accent;
+        
+
+    }
+    
+    nav {
+        background-color: $primary;
+        padding: 0 !important;
+        border-top: 3px solid $primary-accent;
+        border-bottom: 3px solid $primary-accent;
+        ul.navbar-nav {
+            a.nav-link {
+                color:$text-light!important;
+            }
         }
     }
 }
@@ -96,7 +145,7 @@ main {
 }
 
 .btn {
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 5em;
 }
 .btn-primary {
@@ -109,29 +158,24 @@ main {
         background-color: $primary-hover;
     }
 }
-.btn-outline-primary {
-    padding: 0.3em 0.8em;
-    border: 4px solid $primary;
-    color: $primary;
-    &:hover {
-        // text color auto changes to white from bootstrap
-        border: 4px solid $primary;
-        background-color: $primary;
-    }
-}
+// .btn-outline-primary {
+//     padding: 0.3em 0.8em;
+//     border: 4px solid $primary;
+//     color: $primary;
+//     &:hover {
+//         // text color auto changes to white from bootstrap
+//         border: 4px solid $primary;
+//         background-color: $primary;
+//     }
+// }
+
 
 #row-slide-1 {
     margin: 0;
     #slide-1 {
         // to take up most of initial view
-        min-height: 92vh;
-        padding: 0;
-        
-        #header-img-container {
-        width: 100%;
-        img {
-            width: 100%;
-        }
+        // min-height: 92vh;
+        padding: 0;  
     }
     .intro-content {
         max-width: 700px;
@@ -142,7 +186,7 @@ main {
             h1 {
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 2.8rem;
+                font-size: 2rem;
                 color: $primary;
                 font-weight: bolder;
                 span {
@@ -150,25 +194,11 @@ main {
                 }
             }
         }
-        .info-big, .info-small{
+        .info {
             font-family: 'Nunito', sans-serif;
-        }
-        .info-big {font-size: 1.5rem;}
-        .info-small {font-size: 1.2rem}
-    }
-        #river-description {
-            // border: 1px solid black;
-            margin: 20px 0;
-            max-width: 50ch;
-            p {
-                font-weight: 600;
-                font-size:1.2rem;
-                color: $primary;
-            }
         }
     }
 }
-
 
 
 // ---- Activities ----
@@ -193,12 +223,13 @@ main {
             border-radius: 2em;
             background: black;
             margin: 15px 0;
-            overflow: scroll;
             h3 {
                 font-size: 1.8rem;
             }
             p {
+                color: $text-light;
                 font-size: 0.9rem;
+                overflow: scroll !important;
                 a {
                     color: $text-light;
                     text-decoration: none;
@@ -209,7 +240,8 @@ main {
             }
         }
         .card-img {
-            opacity: 0.5;  
+            opacity: 0.5; 
+            border-radius: 2em; 
         }
     }
 }
@@ -324,29 +356,26 @@ footer {
             max-width: 60%;
         }
     }
-    .licenseImage-container {
-        margin: 0 auto;
-        max-width: 70%;
-        display: flex;
-        justify-content: center;
-        img {
-            width: 100px;
-        }
-
-    }
 }
 
 
 // Add a media query where the flex direction in the footer changes
-@media only screen and (min-width: map.get($grid-breakpoints, "sm")) {
+@media only screen and (max-width: map.get($grid-breakpoints, "sm")) {
     html {
-        font-size: 115%;
+        font-size: 80%;
         #info-bar {
-            font-size: 90%;
+            font-size: 80%;
         }
     }
-    #slide-2-title {
-        // display:none;
-        font-size: 2rem !important;
+    #logoLeftBank {
+        left: 0 !important;
+        width: 25vw !important;
+        min-width: 70px !important;
     }
+    #adventureLicense {
+        right: 0 !important;
+        width: 24vw !important;
+        min-width: 90px !important;
+    }
+    
 }

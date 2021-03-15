@@ -9,7 +9,12 @@ div {
   max-width: 100vw;
 }
 
+.container-fluid {
+  margin: 0 auto;
+}
+
 body {
+  background-color: #FCF3F0;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -18,40 +23,79 @@ body h1, body h2, body h3, body a, body button {
 }
 body p {
   font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  color: #3E5F74;
 }
 
-#info-bar {
-  background-color: #666;
-  color: white;
-  padding: 5px 8%;
-  align-items: center;
+header {
+  background-color: #3E5F74;
 }
-#info-bar div {
+header #info-bar {
+  background-color: #3E5F74;
+  border-bottom: 3px solid #cbdbdb;
+  color: white;
+  padding: 3px 2%;
+  align-items: center;
+  min-height: 2rem;
+  height: 5vh;
+}
+header #info-bar div {
   max-width: 50%;
   display: flex;
-  margin: 0 1.2em;
+  margin: 0 0.5em;
 }
-#info-bar div i {
-  font-size: 1.2rem;
+header #info-bar div i {
+  font-size: 1rem;
 }
-#info-bar div a {
+header #info-bar div a {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
-  padding-left: 0.7em;
+  padding-left: 0.4em;
   color: #eee;
+  font-size: 1rem;
 }
-#info-bar #envelope {
+header #info-bar #envelope {
   align-items: center;
 }
-
-nav {
-  background-color: #3E5F74 !important;
+header #header-img-container {
+  min-height: 10vh;
+}
+header #header-img-container img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 1.5em;
+}
+header #logoLeftBank {
+  position: absolute;
+  z-index: 2;
+  top: 4vh;
+  left: 2vw;
+  width: 22vw;
+  min-width: 140px;
+  max-width: 180px;
+}
+header #adventureLicense {
+  position: absolute;
+  z-index: 2;
+  top: 4vh;
+  right: 2vw;
+  width: 22vw;
+  min-width: 120px;
+  max-width: 170px;
+  background: #3E5F74;
+  padding: 4px 0 0 7px;
+  border-radius: 50%;
+  border: 5px solid #cbdbdb;
+}
+header nav {
+  background-color: #3E5F74;
   padding: 0 !important;
+  border-top: 3px solid #cbdbdb;
+  border-bottom: 3px solid #cbdbdb;
 }
-nav #logoLeftBank {
-  width: 50px;
-}
-nav ul.navbar-nav a.nav-link {
+header nav ul.navbar-nav a.nav-link {
   color: #eee !important;
 }
 
@@ -60,7 +104,7 @@ main {
 }
 
 .btn {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 5em;
 }
 
@@ -75,62 +119,30 @@ main {
   background-color: #5a798b;
 }
 
-.btn-outline-primary {
-  padding: 0.3em 0.8em;
-  border: 4px solid #3E5F74;
-  color: #3E5F74;
-}
-.btn-outline-primary:hover {
-  border: 4px solid #3E5F74;
-  background-color: #3E5F74;
-}
-
 #row-slide-1 {
   margin: 0;
 }
 #row-slide-1 #slide-1 {
-  min-height: 92vh;
   padding: 0;
 }
-#row-slide-1 #slide-1 #header-img-container {
-  width: 100%;
-}
-#row-slide-1 #slide-1 #header-img-container img {
-  width: 100%;
-}
-#row-slide-1 #slide-1 .intro-content {
+#row-slide-1 .intro-content {
   max-width: 700px;
 }
-#row-slide-1 #slide-1 .intro-content div {
+#row-slide-1 .intro-content div {
   padding: 0.3em 0;
 }
-#row-slide-1 #slide-1 .intro-content #title h1 {
+#row-slide-1 .intro-content #title h1 {
   display: flex;
   flex-wrap: wrap;
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #3E5F74;
   font-weight: bolder;
 }
-#row-slide-1 #slide-1 .intro-content #title h1 span {
+#row-slide-1 .intro-content #title h1 span {
   font-weight: normal;
 }
-#row-slide-1 #slide-1 .intro-content .info-big, #row-slide-1 #slide-1 .intro-content .info-small {
+#row-slide-1 .intro-content .info {
   font-family: "Nunito", sans-serif;
-}
-#row-slide-1 #slide-1 .intro-content .info-big {
-  font-size: 1.5rem;
-}
-#row-slide-1 #slide-1 .intro-content .info-small {
-  font-size: 1.2rem;
-}
-#row-slide-1 #slide-1 #river-description {
-  margin: 20px 0;
-  max-width: 50ch;
-}
-#row-slide-1 #slide-1 #river-description p {
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #3E5F74;
 }
 
 #slide-2 {
@@ -155,13 +167,14 @@ main {
   border-radius: 2em;
   background: black;
   margin: 15px 0;
-  overflow: scroll;
 }
 #slide-2 .activity-images .card h3 {
   font-size: 1.8rem;
 }
 #slide-2 .activity-images .card p {
+  color: #eee;
   font-size: 0.9rem;
+  overflow: scroll !important;
 }
 #slide-2 .activity-images .card p a {
   color: #eee;
@@ -172,6 +185,7 @@ main {
 }
 #slide-2 .activity-images .card-img {
   opacity: 0.5;
+  border-radius: 2em;
 }
 
 #row-slide-3 {
@@ -266,25 +280,24 @@ footer .footer-content .copyright {
   color: #eee;
   max-width: 60%;
 }
-footer .licenseImage-container {
-  margin: 0 auto;
-  max-width: 70%;
-  display: flex;
-  justify-content: center;
-}
-footer .licenseImage-container img {
-  width: 100px;
-}
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
   html {
-    font-size: 115%;
+    font-size: 80%;
   }
   html #info-bar {
-    font-size: 90%;
+    font-size: 80%;
   }
 
-  #slide-2-title {
-    font-size: 2rem !important;
+  #logoLeftBank {
+    left: 0 !important;
+    width: 25vw !important;
+    min-width: 70px !important;
+  }
+
+  #adventureLicense {
+    right: 0 !important;
+    width: 24vw !important;
+    min-width: 90px !important;
   }
 }/*# sourceMappingURL=styles.css.map */
