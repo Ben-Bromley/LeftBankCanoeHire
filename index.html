@@ -3,10 +3,19 @@
 
 <head>
     <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Left Bank | Canoe Hire</title>
     <link rel="shortcut icon" href="Resources/home-favicon.ico" style>
+    <meta http-equiv="X-UA-Compatible" content="chrome=IE8" />
+    <!-- meta tags from original site -->
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="language" content="EN-GB" />
+    <meta name="author" content="Leftbank Canoe Hire / Ultimate Consortium Ltd" />
+    <meta name="copyright" content="Leftbank Canoe Hire / Ultimate Consortium Ltd " />
     <meta name="description"
         content="Left Bank Canoe Hire provides Canadian Canoes &amp; Kayak hire on the River Wye. We are based in Hereford city center and cover all stretches of the River Wye."
         style>
@@ -22,91 +31,495 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
-    <!-- 
-
-        old fa icon link
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    -->
-    <!-- Lets find some more meta tags! -->
 </head>
 
 <body>
-    <div id="info-bar" class="container-fluid d-none d-sm-flex justify-content-end align-items-center">
-        <div id="phone-num">
-            <i class="fa fa-phone"></i>
-            <!-- href tel attribute from original site :) -->
-            <a href="tel:01432264807">01432 264 807</a>
-        </div>
-        <div id="envelope">
-            <i class="fa fa-envelope"></i>
-            <!-- clickable link to email :) -->
-            <a href="mailto:enquiries@leftbankcanoe.co.uk">enquiries@leftbankcanoe.co.uk</a>
-        </div>
-    </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark p-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img id="logoLeftBank" src="Resources/landingPage/logoLeftBank.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Canoeing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kayaking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Camping</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">On the River</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                </ul>
+    <header class="sticky-top">
+        <div id="info-bar" class="container-fluid d-flex justify-content-center align-items-center">
+            <div id="phone-num" class="pt-1">
+                <i class="fa fa-phone"></i>
+                <!-- href tel attribute from original site :) -->
+                <a href="tel:01432264807">01432 264 807</a>
+            </div>
+            <div id="envelope">
+                <i class="fa fa-envelope"></i>
+                <!-- clickable link to email :) -->
+                <a href="mailto:enquiries@leftbankcanoe.co.uk">enquiries@leftbankcanoe.co.uk</a>
             </div>
         </div>
-    </nav>
+        <div id="header-img-container" class="container">
+            <img src="Resources/landingPage/headerCanoeing.jpg" alt="just an image" id="header-img" class="img">
+        </div>
+        <a class="img-fluid" href="#">
+            <img id="logoLeftBank" src="Resources/landingPage/logoLeftBank.png" alt="">
+        </a>
+        <div class="img-fluid">
+            <img id="adventureLicense" src="Resources/landingPage/adventurelicensing.png" alt="">
+        </div>
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Canoeing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kayaking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Camping</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">On the River</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
     <main>
         <div id="row-slide-1" class="row">
-            <article id="slide-1" class="container col-lg-8">
-                <section id="header-img-container">
-                    <img src="Resources/landingPage/headerCanoeing.jpg" alt="just an image" id="header-img"
-                        class="img-fluid">
-                </section>
+            <article id="slide-1" class="container">
                 <section class="container intro-content d-flex flex-column justify-content-evenly">
                     <div id="title">
                         <h1>Left Bank &nbsp;<span>Canoe Hire</span></h1>
                     </div>
-                    <div class="info-big">
-                        <p>Left Bank Canoe Hire provides Canoes & Kayak hire across all stretches of the beautiful River
-                            Wye, in Hereford, Wales.</p>
+                    <!-- not working !! -->
+                    <div class="hire-form">
+
+                        <script type="text/javascript" src="https://form.jotformeu.com/jsform/30234872376355"
+                            style=""></script>
+                        <iframe title="Leftbank Canoe Hire Hereford" src="" allowtransparency="true"
+                            allow="geolocation; microphone; camera" allowfullscreen="true" name="30234872376355"
+                            id="30234872376355"
+                            style="width: 10px; min-width: 100%; display: block; overflow: hidden; border: medium none; height: 428px; min-height: 300px;"
+                            scrolling="no">
+                            #document
+                            <html>
+
+                            <head>
+                                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                                <link rel="alternate" type="application/json+oembed"
+                                    href="https://www.jotform.com/oembed/?format=json&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F30234872376355"
+                                    title="oEmbed Form">
+                                <link rel="alternate" type="text/xml+oembed"
+                                    href="https://www.jotform.com/oembed/?format=xml&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F30234872376355"
+                                    title="oEmbed Form">
+                                <meta property="og:title" content="Leftbank Canoe Hire Hereford">
+                                <meta property="og:url" content="https://form.jotformeu.com/30234872376355">
+                                <meta property="og:description" content="Please click the link to complete this form.">
+                                <meta name="slack-app-id" content="AHNMASS8M">
+                                <link rel="shortcut icon" href="https://cdn.jotfor.ms/favicon.ico">
+                                <link rel="canonical" href="https://form.jotformeu.com/30234872376355">
+                                <meta name="viewport"
+                                    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+                                <meta name="HandheldFriendly" content="true">
+                                <title>Leftbank Canoe Hire Hereford</title>
+                                <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.13309" rel="stylesheet"
+                                    type="text/css">
+                                <link type="text/css" rel="stylesheet"
+                                    href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.13309">
+                                <link type="text/css" media="print" rel="stylesheet"
+                                    href="https://cdn.jotfor.ms/css/printForm.css?3.3.13309">
+                                <style type="text/css">
+                                    .form-label-left {
+                                        width: 90px;
+                                    }
+
+                                    .form-line {
+                                        padding-top: 1px;
+                                        padding-bottom: 1px;
+                                    }
+
+                                    .form-label-right {
+                                        width: 90px;
+                                    }
+
+                                    body,
+                                    html {
+                                        margin: 0;
+                                        padding: 0;
+                                        background: #F5EFE3;
+                                    }
+
+                                    .form-all {
+                                        margin: 0px auto;
+                                        padding-top: 10px;
+                                        width: 365px;
+                                        background: lightgrey;
+                                        color: #3E5F74 !important;
+                                        font-family: 'Nunito', sans-serif;
+                                        font-size: 11px;
+                                    }
+
+                                    .form-radio-item label,
+                                    .form-checkbox-item label,
+                                    .form-grading-label,
+                                    .form-header {
+                                        color: #555;
+                                    }
+                                </style>
+                                <script src="https://cdn.jotfor.ms/static/prototype.forms.js"
+                                    type="text/javascript"></script>
+                                <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.13309"
+                                    type="text/javascript"></script>
+                                <script type="text/javascript">
+                                    var jsTime = setInterval(function () {
+                                        try {
+                                            JotForm.jsForm = true;
+
+                                            JotForm.init(function () {
+
+                                                JotForm.calendarMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                                                JotForm.calendarDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+                                                JotForm.calendarOther = { "today": "Today" };
+                                                var languageOptions = document.querySelectorAll('#langList li');
+                                                for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
+                                                    languageOptions[langIndex].on('click', function (e) { setTimeout(function () { JotForm.setCalendar("8", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "" }); }, 0); });
+                                                }
+                                                JotForm.setCalendar("8", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "" });
+                                                JotForm.initCaptcha('input_12');
+                                                $('input_12_reload').observe('click', function () { JotForm.reloadCaptcha('input_12') })
+                                                JotForm.description('input_12', 'SPAM Protection');
+                                                JotForm.clearFieldOnHide = "disable";
+                                                /*INIT-END*/
+                                            });
+
+                                            clearInterval(jsTime);
+                                        } catch (e) { }
+                                    }, 1000);
+
+                                    JotForm.prepareCalculationsOnTheFly([null, null, { "name": "email", "qid": "2", "text": "Email:", "type": "control_textbox" }, { "name": "contactNo", "qid": "3", "text": "Contact no:", "type": "control_textbox" }, { "name": "groupSize", "qid": "4", "text": "Group size:", "type": "control_textbox" }, null, { "name": "message", "qid": "6", "text": "Message:", "type": "control_textarea" }, null, { "name": "eventDate", "qid": "8", "text": "Event date:", "type": "control_datetime" }, null, null, { "name": "name11", "qid": "11", "text": "Name:", "type": "control_textbox" }, { "description": "SPAM Protection", "name": "enterThe12", "qid": "12", "text": "Enter the message as it's shown", "type": "control_captcha" }, { "name": "submit", "qid": "13", "text": "Submit", "type": "control_button" }, { "description": "", "name": "tags", "qid": "14", "text": "Tags", "type": "control_checkbox" }]);
+                                    setTimeout(function () {
+                                        JotForm.paymentExtrasOnTheFly([null, null, { "name": "email", "qid": "2", "text": "Email:", "type": "control_textbox" }, { "name": "contactNo", "qid": "3", "text": "Contact no:", "type": "control_textbox" }, { "name": "groupSize", "qid": "4", "text": "Group size:", "type": "control_textbox" }, null, { "name": "message", "qid": "6", "text": "Message:", "type": "control_textarea" }, null, { "name": "eventDate", "qid": "8", "text": "Event date:", "type": "control_datetime" }, null, null, { "name": "name11", "qid": "11", "text": "Name:", "type": "control_textbox" }, { "description": "SPAM Protection", "name": "enterThe12", "qid": "12", "text": "Enter the message as it's shown", "type": "control_captcha" }, { "name": "submit", "qid": "13", "text": "Submit", "type": "control_button" }, { "description": "", "name": "tags", "qid": "14", "text": "Tags", "type": "control_checkbox" }]);
+                                    }, 20);
+                                </script>
+                            </head>
+
+                            <body style="position: relative;">
+                                <form class="jotform-form" action="https://submit.jotformeu.com/submit/30234872376355/"
+                                    method="post" name="form_30234872376355" id="30234872376355" accept-charset="utf-8"
+                                    novalidate="true">
+                                    <input type="hidden" name="formID" value="30234872376355">
+                                    <input type="hidden" id="JWTContainer" value="">
+                                    <input type="hidden" id="cardinalOrderNumber" value="">
+                                    <div role="main" class="form-all">
+                                        <ul class="form-section page-section">
+                                            <li class="form-line jf-required" data-type="control_textbox" id="id_11">
+                                                <label class="form-label form-label-left form-label-auto" id="label_11"
+                                                    for="input_11">
+                                                    Name:
+                                                    <span class="form-required">
+                                                        *
+                                                    </span>
+                                                </label>
+                                                <div id="cid_11" class="form-input jf-required">
+                                                    <input type="text" id="input_11" name="q11_name11"
+                                                        data-type="input-textbox"
+                                                        class="form-textbox validate[required]" size="20" value=""
+                                                        placeholder=" " data-component="textbox"
+                                                        aria-labelledby="label_11" required="">
+                                                </div>
+                                            </li>
+                                            <li class="form-line jf-required" data-type="control_textbox" id="id_2">
+                                                <label class="form-label form-label-left form-label-auto" id="label_2"
+                                                    for="input_2">
+                                                    Email:
+                                                    <span class="form-required">
+                                                        *
+                                                    </span>
+                                                </label>
+                                                <div id="cid_2" class="form-input jf-required">
+                                                    <input type="text" id="input_2" name="q2_email"
+                                                        data-type="input-textbox"
+                                                        class="form-textbox validate[required]" size="20" value=""
+                                                        placeholder=" " data-component="textbox"
+                                                        aria-labelledby="label_2" required="">
+                                                </div>
+                                            </li>
+                                            <li class="form-line" data-type="control_textbox" id="id_3">
+                                                <label class="form-label form-label-left" id="label_3" for="input_3">
+                                                    Contact no: </label>
+                                                <div id="cid_3" class="form-input">
+                                                    <input type="text" id="input_3" name="q3_contactNo"
+                                                        data-type="input-textbox" class="form-textbox" size="20"
+                                                        value="" placeholder=" " data-component="textbox"
+                                                        aria-labelledby="label_3">
+                                                </div>
+                                            </li>
+                                            <li class="form-line" data-type="control_textbox" id="id_4">
+                                                <label class="form-label form-label-left form-label-auto" id="label_4"
+                                                    for="input_4"> Group size: </label>
+                                                <div id="cid_4" class="form-input">
+                                                    <input type="text" id="input_4" name="q4_groupSize"
+                                                        data-type="input-textbox" class="form-textbox" size="20"
+                                                        value="" placeholder=" " data-component="textbox"
+                                                        aria-labelledby="label_4">
+                                                </div>
+                                            </li>
+                                            <li class="form-line" data-type="control_datetime" id="id_8">
+                                                <label class="form-label form-label-left form-label-auto" id="label_8"
+                                                    for="day_8"> Event date: </label>
+                                                <div id="cid_8" class="form-input">
+                                                    <div data-wrapper-react="true">
+                                                        <span class="form-sub-label-container"
+                                                            style="vertical-align:top">
+                                                            <input type="tel" class="form-textbox validate[limitDate]"
+                                                                id="day_8" name="q8_eventDate[day]" size="2"
+                                                                data-maxlength="2" value=""
+                                                                aria-labelledby="label_8 sublabel_8_day">
+                                                            <span class="date-separate" aria-hidden="true">
+                                                                &nbsp;-
+                                                            </span>
+                                                            <label class="form-sub-label" for="day_8"
+                                                                id="sublabel_8_day" style="min-height:13px"> Day
+                                                            </label>
+                                                        </span>
+                                                        <span class="form-sub-label-container"
+                                                            style="vertical-align:top">
+                                                            <input type="tel" class="form-textbox validate[limitDate]"
+                                                                id="month_8" name="q8_eventDate[month]" size="2"
+                                                                data-maxlength="2" value=""
+                                                                aria-labelledby="label_8 sublabel_8_month">
+                                                            <span class="date-separate" aria-hidden="true">
+                                                                &nbsp;-
+                                                            </span>
+                                                            <label class="form-sub-label" for="month_8"
+                                                                id="sublabel_8_month" style="min-height:13px"> Month
+                                                            </label>
+                                                        </span>
+                                                        <span class="form-sub-label-container"
+                                                            style="vertical-align:top">
+                                                            <input type="tel" class="form-textbox validate[limitDate]"
+                                                                id="year_8" name="q8_eventDate[year]" size="4"
+                                                                data-maxlength="4" value=""
+                                                                aria-labelledby="label_8 sublabel_8_year">
+                                                            <label class="form-sub-label" for="year_8"
+                                                                id="sublabel_8_year" style="min-height:13px"> Year
+                                                            </label>
+                                                        </span>
+                                                        <span class="form-sub-label-container"
+                                                            style="vertical-align:top">
+                                                            <img class="showAutoCalendar" alt="Pick a Date"
+                                                                id="input_8_pick"
+                                                                src="https://cdn.jotfor.ms/images/calendar.png"
+                                                                style="vertical-align:middle;margin-left:5px"
+                                                                data-component="datetime" aria-hidden="true">
+                                                            <label class="form-sub-label" for="input_8_pick"
+                                                                style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap">
+                                                                Date Picker Icon </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="form-line jf-required" data-type="control_textarea" id="id_6">
+                                                <label class="form-label form-label-left form-label-auto" id="label_6"
+                                                    for="input_6">
+                                                    Message:
+                                                    <span class="form-required">
+                                                        *
+                                                    </span>
+                                                </label>
+                                                <div id="cid_6" class="form-input jf-required">
+                                                    <textarea id="input_6" class="form-textarea validate[required]"
+                                                        name="q6_message" cols="40" rows="2" data-component="textarea"
+                                                        required="" aria-labelledby="label_6"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="form-line jf-required" data-type="control_captcha" id="id_12">
+                                                <label class="form-label form-label-left form-label-auto" id="label_12"
+                                                    for="input_12">
+                                                    Enter the message as it's shown
+                                                    <span class="form-required">
+                                                        *
+                                                    </span>
+                                                </label>
+                                                <div id="cid_12" class="form-input jf-required">
+                                                    <div class="form-captcha" data-component="captcha">
+                                                        <label for="input_12"> <img
+                                                                alt="Captcha - Reload if not displayed"
+                                                                id="input_12_captcha" class="form-captcha-image"
+                                                                style="background:url(https://cdn.jotfor.ms/images/loader-big.gif) no-repeat center"
+                                                                src="data:image/png;base64,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"
+                                                                width="150" height="41"> </label>
+                                                        <div style="white-space:nowrap">
+                                                            <input type="text" id="input_12"
+                                                                class="form-textbox validate[required]" name="captcha"
+                                                                style="width:130px" required="">
+                                                            <img src="https://cdn.jotfor.ms/images/reload.png"
+                                                                alt="Reload"
+                                                                style="cursor:pointer;vertical-align:middle"
+                                                                id="input_12_reload">
+                                                            <input type="hidden" name="captcha_id"
+                                                                id="input_12_captcha_id"
+                                                                value="fe19bcc4a2de4b160c307137589df3f3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-description" style="display: none;">
+                                                    <div class="form-description-arrow"></div>
+                                                    <div class="form-description-arrow-small"></div>
+                                                    <div class="form-description-content">SPAM Protection</div>
+                                                </div>
+                                            </li>
+                                            <li class="form-line" data-type="control_button" id="id_13">
+                                                <div id="cid_13" class="form-input-wide">
+                                                    <div style="margin-left:156px" class="form-buttons-wrapper ">
+                                                        <button id="input_13" type="submit" class="form-submit-button"
+                                                            data-component="button">
+                                                            Submit
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li style="display:none">
+                                                Should be Empty:
+                                                <input type="text" name="website" value="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <script>
+                                        JotForm.showJotFormPowered = "0";
+                                    </script>
+                                    <input type="hidden" id="simple_spc" name="simple_spc"
+                                        value="30234872376355-30234872376355">
+                                    <script type="text/javascript">
+                                        document.getElementById("si" + "mple" + "_spc").value = "30234872376355-30234872376355";
+                                    </script>
+                                    <input type="hidden" name="embedUrl" value=""><input type="hidden" name="event_id"
+                                        value="1615846937979_30234872376355_4dJlCZ1">
+                                </form><img id="event_tracking_image"
+                                    src="https://events.jotform.com/jsform/30234872376355/?ref=&amp;res=1440x900&amp;eventID=1615846937979_30234872376355_4dJlCZ1&amp;loc=https%253A%252F%252Fwww.leftbankcanoehire.co.uk%252F"
+                                    alt="jftr" style="display: none;" width="1" height="1">
+                                <div aria-hidden="true" class="calendar popup"
+                                    style="position: absolute; display: none;" id="calendar_8">
+                                    <table summary="Datepicker Popup">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="7" class="title">March 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="button previousYear">«</td>
+                                                <td class="button previousMonth">‹</td>
+                                                <td colspan="3" class="button todayButton">Today</td>
+                                                <td class="button nextMonth">›</td>
+                                                <td class="button nextYear">»</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="weekend">S</th>
+                                                <th>M</th>
+                                                <th>T</th>
+                                                <th>W</th>
+                                                <th>T</th>
+                                                <th>F</th>
+                                                <th class="weekend">S</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="days">
+                                                <td class="otherDay weekend">28</td>
+                                                <td class="">1</td>
+                                                <td class="">2</td>
+                                                <td class="">3</td>
+                                                <td class="">4</td>
+                                                <td class="">5</td>
+                                                <td class="weekend">6</td>
+                                            </tr>
+                                            <tr class="days">
+                                                <td class="weekend">7</td>
+                                                <td class="">8</td>
+                                                <td class="">9</td>
+                                                <td class="">10</td>
+                                                <td class="">11</td>
+                                                <td class="">12</td>
+                                                <td class="weekend">13</td>
+                                            </tr>
+                                            <tr class="days">
+                                                <td class="weekend">14</td>
+                                                <td class="selected today">15</td>
+                                                <td class="">16</td>
+                                                <td class="">17</td>
+                                                <td class="">18</td>
+                                                <td class="">19</td>
+                                                <td class="weekend">20</td>
+                                            </tr>
+                                            <tr class="days">
+                                                <td class="weekend">21</td>
+                                                <td class="">22</td>
+                                                <td class="">23</td>
+                                                <td class="">24</td>
+                                                <td class="">25</td>
+                                                <td class="">26</td>
+                                                <td class="weekend">27</td>
+                                            </tr>
+                                            <tr class="days">
+                                                <td class="weekend">28</td>
+                                                <td class="">29</td>
+                                                <td class="">30</td>
+                                                <td class="">31</td>
+                                                <td class="otherDay">1</td>
+                                                <td class="otherDay">2</td>
+                                                <td class="otherDay weekend">3</td>
+                                            </tr>
+                                            <tr class="days" style="display: none;">
+                                                <td class="otherDay weekend">4</td>
+                                                <td class="otherDay">5</td>
+                                                <td class="otherDay">6</td>
+                                                <td class="otherDay">7</td>
+                                                <td class="otherDay">8</td>
+                                                <td class="otherDay">9</td>
+                                                <td class="otherDay weekend">10</td>
+                                            </tr>
+                                            <tr class="days" style="display: none;">
+                                                <td class="otherDay weekend">11</td>
+                                                <td class="otherDay">12</td>
+                                                <td class="otherDay">13</td>
+                                                <td class="otherDay">14</td>
+                                                <td class="otherDay">15</td>
+                                                <td class="otherDay">16</td>
+                                                <td class="otherDay weekend">17</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </body>
+
+                            </html>
+                        </iframe>
                     </div>
-                    <div class="info-small">
-                        <p>Canoe & Kayak hire starts from £20 per person, transport included and kids under 13 go half
+                    <div class="info">
+                        <hr>
+                        <p>
+                            Left Bank Canoe Hire provides Canoes & Kayak hire across all stretches of the beautiful
+                            River Wye, in Hereford, Wales.
+                        </p>
+                        <p>
+                            Canoe & Kayak hire starts from £20 per person, transport included and kids under 13 go half
                             price!
                         </p>
+                        <hr>
+                        <p>
+                            The River Wye is perfect for the canoe hire, kayak hire, camping trips we offer.
+                        </p>
+                        <p>
+                            We also have instructors for school groups or individuals that would like training and river
+                            guides for groups that would like us to manage their whole canoe / kayak experience.
+                        </p>
+                        <hr>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <!-- <div class="d-flex justify-content-center">
                         <a href="#hire-form" class="btn btn-primary">Hire Here</a>
                         <a href="#slide-2" class="btn btn-outline-primary">Learn More</a>
-                    </div>
-                    <section id="river-description">
-                        <p>The River Wye is perfect for the canoe hire, kayak hire, camping trips we offer.</p>
-                        <p>We also have instructors for school groups or individuals that would like training and river
-                            guides for groups that would like us to manage their whole canoe / kayak experience.</p>
-                    </section>
+                    </div> -->
                 </section>
             </article>
             <!-- Make this article go to right side on larger displays -->
-            <article id="slide-2" class="container col-lg-4">
+            <article id="slide-2" class="container">
                 <section>
                     <h2 id="slide-2-title">Our Activities</h2>
                     <section class="activity-images">
@@ -153,7 +566,7 @@
         </div>
         <div id="row-slide-3" class="container row">
             <!-- links with icons -->
-            <article class="container col-lg-8">
+            <article class="container">
                 <section id="page-links" class="d-flex flex-column">
                     <span class="page-link-item">
                         <a href="">
@@ -200,27 +613,27 @@
                 </section>
             </article>
             <!-- hiring form -->
-            <article id="form-container" class="container col-lg-4 d-flex justify-content-center">
-                    <!-- Needs to use another request type -->
-                    <form id="hire-form" action="#">
-                        <h3 id="form-title">Hire Here</h3>
-                        <label for="Name">Name: *
-                            <input type="text" placeholder="Name" name="Name">
-                        </label>
-                        <label for="Email">Email: *
-                            <input type="text" placeholder="Email" name="Email">
-                        </label>
-                        <label for="ContactNumber">Contact Number:
-                            <input type="text" placeholder="Contact Number" name="ContactNumber">
-                        </label>
-                        <label for="Date">Date:
-                            <input type="date" name="Date">
-                        </label>
-                        <input type="text" placeholder="Other Details" name="OtherDetails">
-                        <input type="text" placeholder="Recaptcha Authentication" name="Auth">
-                        <p class="align-self-start">* Required</p>
-                        <button class="btn btn-primary" type="submit">Hire!</button>
-                    </form>
+            <article id="form-container" class="container d-flex justify-content-center">
+                <!-- Needs to use another request type -->
+                <form id="hire-form" action="#">
+                    <h3 id="form-title">Hire Here</h3>
+                    <label for="Name">Name: *
+                        <input type="text" placeholder="Name" name="Name">
+                    </label>
+                    <label for="Email">Email: *
+                        <input type="text" placeholder="Email" name="Email">
+                    </label>
+                    <label for="ContactNumber">Contact Number:
+                        <input type="text" placeholder="Contact Number" name="ContactNumber">
+                    </label>
+                    <label for="Date">Date:
+                        <input type="date" name="Date">
+                    </label>
+                    <input type="text" placeholder="Other Details" name="OtherDetails">
+                    <input type="text" placeholder="Recaptcha Authentication" name="Auth">
+                    <p class="align-self-start">* Required</p>
+                    <button class="btn btn-primary" type="submit">Hire!</button>
+                </form>
             </article>
         </div>
 
@@ -276,9 +689,6 @@
             </div>
             <hr>
             <!-- consider adding this next to the copyrights to fill out the space better -->
-            <div class="licenseImage-container">
-                <img src="Resources/landingPage/adventurelicensing.png" alt="">
-            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
