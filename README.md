@@ -2,11 +2,6 @@
 ### My web development trial for Ultimate Web Design
 
 ---
-
-- You can view the Figma project [here](https://www.figma.com/files/project/24930733/LeftBankCanoe).
-- You can view the original design proposal [here](https://docs.google.com/presentation/d/1PWN0VW3nIfn-EHy35xhY78X3SZEDh-8Zp8Qg7f8cwCE/edit?usp=sharing)
-
----
 # Plan:
 
 ## Phase 1: Analysis and Targeting
@@ -32,6 +27,7 @@
      - [x] Embed Youtube Link
      - [x] Embed facebook feed above footer
           - [ ] multiple iframes to responsively render feed?
+          - [ ] remodel after original design
 - [ ] 2nd Draft
 - [ ] 2nd Draft Review
 
