@@ -118,7 +118,8 @@ main {
   min-height: 75vh;
 }
 #slide-1 #title h1 {
-  margin: 2px 0;
+  margin: 0;
+  margin-bottom: 2px;
   display: flex;
   flex-wrap: wrap;
   font-size: 2rem;
@@ -128,13 +129,10 @@ main {
 #slide-1 #title h1 span {
   font-weight: normal;
 }
-#slide-1 #form-container {
-  min-height: 60vh;
-}
 #slide-1 #form-container #hire-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   border-radius: 1em;
 }
@@ -158,7 +156,6 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
 }
 #slide-2 h2 {
   text-align: center;
