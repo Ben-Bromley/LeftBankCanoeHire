@@ -118,7 +118,7 @@ main {
   min-height: 75vh;
 }
 #slide-1 #title h1 {
-  margin: 4px 0;
+  margin: 2px 0;
   display: flex;
   flex-wrap: wrap;
   font-size: 2rem;
@@ -178,11 +178,12 @@ main {
   margin: 15px 0;
 }
 #slide-2 .activity-images .card h3 {
+  color: #eee;
   font-size: 1.8rem;
 }
 #slide-2 .activity-images .card p {
   color: #eee;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 #slide-2 .activity-images .card p a {
   color: #eee;
