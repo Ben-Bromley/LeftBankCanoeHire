@@ -200,24 +200,34 @@ main {
 }
 
 #row-slide-3 {
-  width: 100vw;
   margin: 0 auto;
+  margin-top: 5%;
 }
-
-#page-links, #social-links {
+#row-slide-3 #links {
+  max-width: 1200px;
+}
+#row-slide-3 #links #page-links, #row-slide-3 #links #social-links {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1.3rem;
+  margin-bottom: 5%;
 }
-#page-links span.page-link-item, #social-links span.page-link-item {
-  padding: 12px 0;
+#row-slide-3 #links #page-links span.page-link-item, #row-slide-3 #links #social-links span.page-link-item {
+  padding: 10px 0;
+  min-width: 15em;
+  max-width: calc(100%/3);
+  flex-basis: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
-#page-links span.page-link-item a, #social-links span.page-link-item a {
+#row-slide-3 #links #page-links span.page-link-item a, #row-slide-3 #links #social-links span.page-link-item a {
   color: #3E5F74;
   text-decoration: none;
 }
-#page-links span.page-link-item a:hover, #social-links span.page-link-item a:hover {
+#row-slide-3 #links #page-links span.page-link-item a:hover, #row-slide-3 #links #social-links span.page-link-item a:hover {
   text-decoration: underline;
 }
-#page-links span.page-link-item a i, #social-links span.page-link-item a i {
+#row-slide-3 #links #page-links span.page-link-item a i, #row-slide-3 #links #social-links span.page-link-item a i {
   text-align: center;
   font-size: 2.5rem;
   width: 5rem;
