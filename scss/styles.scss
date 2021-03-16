@@ -12,7 +12,7 @@
 // Colours
 $primary: #3E5F74;
 $primary-accent: #cbdbdb;
-$primary-hover: #5a798b;
+$primary-hover: #6e8594;
 $bg-main: #FCF3F0;
 $text-light: #eee;
 
@@ -47,13 +47,13 @@ body {
     background-color: $bg-main;
     overflow-x: hidden; 
     box-sizing: border-box;
-    h1, h2, h3, a, button {
+    color: $primary;
+    h1, h2, h3, a {
         font-family: 'Bree Serif' , sans-serif;
     }
-    p {
+    p, button {
         font-family: 'Nunito' , sans-serif;
-        font-size: 1.3rem;
-        color: $primary;
+        font-size: 1.2rem;
     }
 }
 
@@ -144,16 +144,11 @@ main {
     background-color: $bg-main;
 }
 
-.btn {
-    font-size: 1rem;
-    border-radius: 5em;
-}
-.btn-primary {
+.btn-main {
+    border-radius: 0.2em;
     border: none;
-    padding: 0.5em 1.5em;
     background-color: $primary;
-    font-weight: bold;
-    margin-right: 3vw;
+    color: white;
     &:hover {
         background-color: $primary-hover;
     }
@@ -170,35 +165,59 @@ main {
 // }
 
 
-#row-slide-1 {
-    margin: 0;
-    #slide-1 {
-        // to take up most of initial view
-        // min-height: 92vh;
-        padding: 0;  
-    }
-    .intro-content {
-        max-width: 700px;
-        div {
-            padding: 0.3em 0;
-        }
-        #title {
-            h1 {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 2rem;
-                color: $primary;
-                font-weight: bolder;
-                span {
-                    font-weight: normal;
-                }
+
+#slide-1 {
+    margin: 0 auto;
+    min-height: 75vh;
+    #title {
+        h1 {
+            margin: 4px 0;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 2rem;
+            color: $primary;
+            font-weight: bolder;
+            span {
+                font-weight: normal;
             }
         }
-        .info {
-            font-family: 'Nunito', sans-serif;
-        }
     }
+    // ---- Form ----
+    #form-container {
+        // border: 1px solid blue;
+        min-height: 60vh;
+        #hire-form {
+            // padding: 3%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            // color: $primary;
+            // border: 1px solid black;
+            border-radius: 1em;
+            label {
+                width: 100%;
+                margin: 2px 0 0px 0;
+            }
+            input {
+                width: 100%;
+                padding: 0.4rem;
+                margin: 2px 0;
+                border-radius: 0.2em;
+                border: 1px solid black;
+            }
+            button {
+                font-size: 1.2rem;
+                padding: 0.4em 1.5em;
+            }
+        }   
+    }
+    // #intro-text {
+
+    // }
 }
+
+
 
 
 // ---- Activities ----
@@ -229,7 +248,6 @@ main {
             p {
                 color: $text-light;
                 font-size: 0.9rem;
-                overflow: scroll !important;
                 a {
                     color: $text-light;
                     text-decoration: none;
@@ -271,42 +289,6 @@ main {
                 font-size: 2.5rem;
                 width: 5rem;
             }
-        }
-    }
-}
-
-// ---- Form ----
-
-#form-container {
-    // border: 1px solid blue;
-    #hire-form {
-        padding: 5%;
-        min-height: 550px;
-        // min-width: 350px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background: lightgrey;
-        color: $primary;
-        border: 1px solid black;
-        border-radius: 1em;
-        #form-title {
-            font-size: 2.5rem;
-        }
-        label {
-            width: 100%;
-        }
-        input {
-            width: 100%;
-            padding: 0.5rem;
-            border-radius: 0.5em;
-            border: 1px solid black;
-        }
-        button {
-            font-size: 1.4rem;
-            padding: 0.4em 1.5em;
         }
     }
 }

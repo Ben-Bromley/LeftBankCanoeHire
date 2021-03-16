@@ -17,14 +17,14 @@ body {
   background-color: #FCF3F0;
   overflow-x: hidden;
   box-sizing: border-box;
+  color: #3E5F74;
 }
-body h1, body h2, body h3, body a, body button {
+body h1, body h2, body h3, body a {
   font-family: "Bree Serif", sans-serif;
 }
-body p {
+body p, body button {
   font-family: "Nunito", sans-serif;
-  font-size: 1.3rem;
-  color: #3E5F74;
+  font-size: 1.2rem;
 }
 
 header {
@@ -103,46 +103,55 @@ main {
   background-color: #FCF3F0;
 }
 
-.btn {
-  font-size: 1rem;
-  border-radius: 5em;
-}
-
-.btn-primary {
+.btn-main {
+  border-radius: 0.2em;
   border: none;
-  padding: 0.5em 1.5em;
   background-color: #3E5F74;
-  font-weight: bold;
-  margin-right: 3vw;
+  color: white;
 }
-.btn-primary:hover {
-  background-color: #5a798b;
+.btn-main:hover {
+  background-color: #6e8594;
 }
 
-#row-slide-1 {
-  margin: 0;
+#slide-1 {
+  margin: 0 auto;
+  min-height: 75vh;
 }
-#row-slide-1 #slide-1 {
-  padding: 0;
-}
-#row-slide-1 .intro-content {
-  max-width: 700px;
-}
-#row-slide-1 .intro-content div {
-  padding: 0.3em 0;
-}
-#row-slide-1 .intro-content #title h1 {
+#slide-1 #title h1 {
+  margin: 4px 0;
   display: flex;
   flex-wrap: wrap;
   font-size: 2rem;
   color: #3E5F74;
   font-weight: bolder;
 }
-#row-slide-1 .intro-content #title h1 span {
+#slide-1 #title h1 span {
   font-weight: normal;
 }
-#row-slide-1 .intro-content .info {
-  font-family: "Nunito", sans-serif;
+#slide-1 #form-container {
+  min-height: 60vh;
+}
+#slide-1 #form-container #hire-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1em;
+}
+#slide-1 #form-container #hire-form label {
+  width: 100%;
+  margin: 2px 0 0px 0;
+}
+#slide-1 #form-container #hire-form input {
+  width: 100%;
+  padding: 0.4rem;
+  margin: 2px 0;
+  border-radius: 0.2em;
+  border: 1px solid black;
+}
+#slide-1 #form-container #hire-form button {
+  font-size: 1.2rem;
+  padding: 0.4em 1.5em;
 }
 
 #slide-2 {
@@ -174,7 +183,6 @@ main {
 #slide-2 .activity-images .card p {
   color: #eee;
   font-size: 0.9rem;
-  overflow: scroll !important;
 }
 #slide-2 .activity-images .card p a {
   color: #eee;
@@ -210,36 +218,6 @@ main {
   text-align: center;
   font-size: 2.5rem;
   width: 5rem;
-}
-
-#form-container #hire-form {
-  padding: 5%;
-  min-height: 550px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background: lightgrey;
-  color: #3E5F74;
-  border: 1px solid black;
-  border-radius: 1em;
-}
-#form-container #hire-form #form-title {
-  font-size: 2.5rem;
-}
-#form-container #hire-form label {
-  width: 100%;
-}
-#form-container #hire-form input {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.5em;
-  border: 1px solid black;
-}
-#form-container #hire-form button {
-  font-size: 1.4rem;
-  padding: 0.4em 1.5em;
 }
 
 #leftbank-youtube {
