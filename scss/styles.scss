@@ -85,11 +85,16 @@ header {
     #header-img-container {
         // height: 10vh;
         // border-radius: 1.5em;
+        #header-carousel {
+            display: block;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
         img {
             // display: block;
             margin: 0 auto;
-            // width: 100%;
-            max-width: 700px;
+            width: 100%;
         }
     }
     
