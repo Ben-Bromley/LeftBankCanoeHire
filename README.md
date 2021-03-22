@@ -22,12 +22,15 @@
 - [x] 1st Draft Review
      - [x] Return headers to original bree-serif font
      - [ ] Insert updated images and license logo
+        - [ ] Crop header images
      - [x] Replace link images with icons
      - [ ] Add Dropdowns and active page indicator
      - [x] Embed Youtube Link
      - [x] Embed facebook feed above footer
           - [ ] multiple iframes to responsively render feed?
           - [ ] remodel after original design
+     - [ ] Add carousel for other images, call it "Gallery"
+     - [ ] Consider changing header image based on activity or screen
 - [ ] 2nd Draft
 - [ ] 2nd Draft Review
 

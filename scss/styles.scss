@@ -38,10 +38,6 @@ div {
     max-width: 100vw;
 }
 
-.container-fluid {
-    margin: 0 auto;
-}
-
 body {
     background-color: $bg-main;
     overflow-x: hidden; 
@@ -52,7 +48,7 @@ body {
     }
     p, button {
         font-family: 'Nunito' , sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -87,13 +83,18 @@ header {
         }
     }
     #header-img-container {
-        min-height: 10vh;
-        img {
+        // height: 10vh;
+        // border-radius: 1.5em;
+        #header-carousel {
             display: block;
             margin: 0 auto;
+            max-width: 400px;
+        }
+
+        img {
+            // display: block;
+            margin: 0 auto;
             width: 100%;
-            max-width: 700px;
-            border-radius: 1.5em;
         }
     }
     
@@ -174,7 +175,7 @@ main {
             margin-bottom: 2px;
             display: flex;
             flex-wrap: wrap;
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: $primary;
             font-weight: bolder;
             span {
@@ -234,22 +235,26 @@ main {
         margin: 0 auto;
         flex-wrap: wrap;
         .card {
-            flex-basis: 360px;
+            padding: 1rem;
+            flex-basis: 300px;
             flex-grow: 2;
             width: 400px;
             max-width:400px;
-            border-radius: 2em;
-            background: black;
+            border-radius: 1.5em;
+            background: $bg-main;
             margin: 5px;
             h3 {
-                color: $text-light;
-                font-size: 1.8rem;
+                // color: $text-light;
+                color: $primary;
+                font-size: 2rem;
             }
             p {
-                color: $text-light;
-                font-size: 1.1rem;
+                // color: $text-light;
+                color: $primary;
+                font-size: 1.3rem;
                 a {
-                    color: $text-light;
+                    // color: $text-light;
+                    color: $primary;
                     text-decoration: none;
                     &:hover {
                         text-decoration: underline;
@@ -257,9 +262,8 @@ main {
                 }
             }
         }
-        .card-img {
-            opacity: 0.5; 
-            border-radius: 2em; 
+        img {
+            border-radius: 1.5em; 
         }
     }
 }
