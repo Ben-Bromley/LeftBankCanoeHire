@@ -57,13 +57,7 @@ header #info-bar div a {
 header #info-bar #envelope {
   align-items: center;
 }
-header #header-img-container {
-  min-height: 10vh;
-}
 header #header-img-container img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
   max-width: 700px;
   border-radius: 1.5em;
 }
