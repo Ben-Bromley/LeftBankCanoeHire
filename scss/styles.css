@@ -54,6 +54,7 @@ header #info-bar #envelope {
   align-items: center;
 }
 header #header-img-container img {
+  margin: 0 auto;
   max-width: 700px;
 }
 header #logoLeftBank {
