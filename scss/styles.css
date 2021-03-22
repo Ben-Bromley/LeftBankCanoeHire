@@ -9,10 +9,6 @@ div {
   max-width: 100vw;
 }
 
-.container-fluid {
-  margin: 0 auto;
-}
-
 body {
   background-color: #FCF3F0;
   overflow-x: hidden;
@@ -59,7 +55,6 @@ header #info-bar #envelope {
 }
 header #header-img-container img {
   max-width: 700px;
-  border-radius: 1.5em;
 }
 header #logoLeftBank {
   position: absolute;
