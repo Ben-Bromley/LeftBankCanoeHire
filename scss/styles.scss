@@ -105,7 +105,7 @@ header {
         left: 2vw;
         width: 22vw;
         min-width: 140px;
-        max-width: 180px;
+        max-width: 200px;
     }
 
     #adventureLicense {
@@ -117,7 +117,7 @@ header {
         // gives lots of control over image sizes
         width: 22vw;
         min-width: 120px;
-        max-width: 170px;
+        max-width: 190px;
         background: $primary;
         // temporary padding
         padding: 4px 0 0 7px;
@@ -209,14 +209,7 @@ main {
             }
         }   
     }
-    // #intro-text {
-
-    // }
 }
-
-
-
-
 // ---- Activities ----
 #slide-2 {
     margin: 0 auto;
@@ -276,7 +269,10 @@ main {
     margin: 0 auto;
     margin-top: 5%;
     // ---- page links ----
-    #links {
+    article#links {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
         max-width: 1200px;
         #page-links, #social-links {
             display: flex;
@@ -330,6 +326,7 @@ footer {
     padding: 10px 5%;
     background-color: $primary;
     color: $text-light;
+    p , a {font-size: 1rem;}
     hr {
         border: 1px solid white;
         opacity: 1;
