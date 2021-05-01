@@ -15,8 +15,18 @@ body {
   box-sizing: border-box;
   color: #3E5F74;
 }
-body h1, body h2, body h3, body a {
+body h1, body h2, body h3, body h4, body h5, body h6, body a {
   font-family: "Bree Serif", sans-serif;
+  color: #3E5F74;
+}
+body h1 {
+  font-size: 2.8rem;
+}
+body h2 {
+  font-size: 2.5;
+}
+body h3 {
+  font-size: 2rem;
 }
 body p, body button {
   font-family: "Nunito", sans-serif;
@@ -118,8 +128,6 @@ main {
   margin-bottom: 2px;
   display: flex;
   flex-wrap: wrap;
-  font-size: 2.5rem;
-  color: #3E5F74;
   font-weight: bolder;
 }
 #slide-1 #title h1 span {
@@ -156,8 +164,6 @@ main {
 #slide-2 h2 {
   text-align: center;
   font-weight: 200;
-  font-size: 2.5rem;
-  color: #3E5F74;
 }
 #slide-2 .activity-images {
   width: 90%;
@@ -179,7 +185,6 @@ main {
 #slide-2 .activity-images .card h3 {
   margin-top: 10px;
   color: #3E5F74;
-  font-size: 2rem;
 }
 #slide-2 .activity-images .card p {
   color: #3E5F74;
