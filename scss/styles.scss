@@ -123,8 +123,6 @@ header {
         padding: 4px 0 0 7px;
         border-radius: 50%;
         border: 5px solid $primary-accent;
-        
-
     }
     
     nav {
@@ -143,6 +141,7 @@ header {
 
 main {
     background-color: $bg-main;
+    // background-color: red;
 }
 
 .btn-main {
@@ -322,7 +321,7 @@ footer {
     }
 }
 // Add a media query where the flex direction in the footer changes
-@media only screen and (max-width: map.get($grid-breakpoints, "sm")) {
+@media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
     html {
         font-size: 80%; 
         #info-bar {font-size: 80%;}
