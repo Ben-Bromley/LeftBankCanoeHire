@@ -130,6 +130,7 @@ header {
     nav {
         background-color: $primary;
         padding: 0 !important;
+        margin-bottom: 8px;
         border-top: 3px solid $primary-accent;
         border-bottom: 3px solid $primary-accent;
         ul.navbar-nav {
@@ -163,9 +164,6 @@ main {
 //         background-color: $primary;
 //     }
 // }
-
-
-
 #slide-1 {
     margin: 0 auto;
     min-height: 70vh;
@@ -237,7 +235,7 @@ main {
             background: $bg-main;
             margin: 5px;
             h3 {
-                // color: $text-light;
+                margin-top: 10px;
                 color: $primary;
                 font-size: 2rem;
             }
@@ -266,100 +264,73 @@ main {
 #row-slide-3 {
     // width: 100vw;
     // centers the container properly
-    margin: 0 auto;
-    margin-top: 5%;
+    margin: 5% auto;
     // ---- page links ----
     article#links {
+        // border: 1px solid green;
         display: flex;
         flex-direction: column;
         align-items: center ;
-        max-width: 1200px;
+        max-width: 39rem;
         #page-links, #social-links {
+            margin: 5% 0;
+            width: 100%;
+            // border: 1px solid red;
             display: flex;
             flex-wrap: wrap;
             font-size: 1.3rem;
-            margin-bottom: 5%;
             span.page-link-item {
-                padding: 10px 0;
-                min-width: 15em;
-                max-width: calc(100%/3);
-                // must be px
-                flex-basis: 10px;
+                padding: 0.2rem 0.5rem;
+                width: 50%;
+                flex-basis: 150px;
                 flex-grow: 1;
                 flex-shrink: 1;
                 a {
+                    // border: 1px solid blue;
                     color: $primary;
                     text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
                     &:hover {
                         text-decoration: underline;
                     }
                     i {
-                        text-align: center;
-                        font-size: 2.5rem;
-                        width: 5rem;
+                        font-size: 4.8rem;
                     }
                 }
             }
         }
+        #social-links {width: 25rem;}
     }
 }
-
-// ----- for youtube iframe ---
-
-#leftbank-youtube {
-    width: 100vw;
-    height: 56.25vw;
-    max-width: 840px;
-    max-height: 472.5px; 
-    margin: 20px 0;
-}
-
-#fb-feed {
-    margin: 20px 0;
-}
-
+// ----- for embded frames ---
+#embeds {margin: 0 auto;}
+#leftbank-youtube {width: 100vw; height: 56.25vw; max-width: 840px; max-height: 472.5px;  margin: 10px 0;}
+#fb-feed {margin: 10px 0;}
 // ---- Footer ----
 // MAKE IT DISPLAY FLEX COLUMN TO FIX LINK ISSUES
-
 footer {
     margin: 0;
     padding: 10px 5%;
     background-color: $primary;
     color: $text-light;
     p , a {font-size: 1rem;}
-    hr {
-        border: 1px solid white;
-        opacity: 1;
-    }
+    hr {border: 1px solid white; opacity: 1;}
     .footer-content {
-        // mostly just a fix for the footer links
-    a {
-        color: $text-light;
-        text-decoration: none;
-        &:hover {
-            color: $text-light;
-            text-decoration: underline;
+        a {color: $text-light; text-decoration: none;
+            &:hover {color: $text-light; text-decoration: underline;}
         }
-    }
-        .linkGroup {
-            padding: 0.8em 0;
-        }
-        .copyright {
-            padding-top: 20px;
-            color: $text-light;
-            max-width: 60%;
-        }
+        .linkGroup {padding: 0.8em 0;}
+        .copyright {padding-top: 20px; color: $text-light; max-width: 60%;}
     }
 }
-
-
 // Add a media query where the flex direction in the footer changes
 @media only screen and (max-width: map.get($grid-breakpoints, "sm")) {
     html {
-        font-size: 80%;
-        #info-bar {
-            font-size: 80%;
-        }
+        font-size: 80%; 
+        #info-bar {font-size: 80%;}
     }
     #logoLeftBank {
         left: 0 !important;

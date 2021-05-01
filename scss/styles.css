@@ -87,6 +87,7 @@ header #adventureLicense {
 header nav {
   background-color: #3E5F74;
   padding: 0 !important;
+  margin-bottom: 8px;
   border-top: 3px solid #cbdbdb;
   border-bottom: 3px solid #cbdbdb;
 }
@@ -176,6 +177,7 @@ main {
   margin: 5px;
 }
 #slide-2 .activity-images .card h3 {
+  margin-top: 10px;
   color: #3E5F74;
   font-size: 2rem;
 }
@@ -195,40 +197,48 @@ main {
 }
 
 #row-slide-3 {
-  margin: 0 auto;
-  margin-top: 5%;
+  margin: 5% auto;
 }
 #row-slide-3 article#links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 39rem;
 }
 #row-slide-3 article#links #page-links, #row-slide-3 article#links #social-links {
+  margin: 5% 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   font-size: 1.3rem;
-  margin-bottom: 5%;
 }
 #row-slide-3 article#links #page-links span.page-link-item, #row-slide-3 article#links #social-links span.page-link-item {
-  padding: 10px 0;
-  min-width: 15em;
-  max-width: calc(100%/3);
-  flex-basis: 10px;
+  padding: 0.2rem 0.5rem;
+  width: 50%;
+  flex-basis: 150px;
   flex-grow: 1;
   flex-shrink: 1;
 }
 #row-slide-3 article#links #page-links span.page-link-item a, #row-slide-3 article#links #social-links span.page-link-item a {
   color: #3E5F74;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 #row-slide-3 article#links #page-links span.page-link-item a:hover, #row-slide-3 article#links #social-links span.page-link-item a:hover {
   text-decoration: underline;
 }
 #row-slide-3 article#links #page-links span.page-link-item a i, #row-slide-3 article#links #social-links span.page-link-item a i {
-  text-align: center;
-  font-size: 2.5rem;
-  width: 5rem;
+  font-size: 4.8rem;
+}
+#row-slide-3 article#links #social-links {
+  width: 25rem;
+}
+
+#embeds {
+  margin: 0 auto;
 }
 
 #leftbank-youtube {
@@ -236,11 +246,11 @@ main {
   height: 56.25vw;
   max-width: 840px;
   max-height: 472.5px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 #fb-feed {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 footer {
