@@ -21,29 +21,32 @@
 - [x] 1st Draft
 - [x] 1st Draft Review
      - [x] Return headers to original bree-serif font
-     - [ ] Insert updated images and license logo
-        - [ ] Crop header images
+     - [x] Insert updated images and license logo
+        - [x] Crop header images
      - [x] Replace link images with icons
      - [ ] Add Dropdowns and active page indicator
      - [x] Embed Youtube Link
      - [x] Embed facebook feed above footer
           - [ ] multiple iframes to responsively render feed?
-          - [ ] remodel after original design
-     - [ ] Add carousel for other images, call it "Gallery"
+          - [x] remodel after original design
+     - [x] Add carousel for other images, call it "Gallery"
      - [ ] Consider changing header image based on activity or screen
-- [ ] 2nd Draft
-- [ ] 2nd Draft Review
+- [x] 2nd Draft
+- [x] 2nd Draft Review: APPROVED
 
-- [ ] Responsive Design
-    - [ ] change font sizes to variables
-    - [ ] change variables based on media queries
-    - [ ] create bootstrap grid
+- [x] Responsive Design
+    - [x] change font sizes to variables
+    - [x] change variables based on media queries
+    - [x] create bootstrap grid
 
 
-## Phase 4: Final Product
+## Phase 4: Final Implementation
 
 - [ ] Space for All content?
-- [ ] Same Branding?
+- [x] Same Branding?
+- [ ] Analytics fully implemented?
+- [ ] Jotform functional?
+- [ ] All pages link to each other?
 
 ## Phase 5: Evaluation
 
