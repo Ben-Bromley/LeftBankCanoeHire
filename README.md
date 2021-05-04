@@ -47,6 +47,11 @@
 - [ ] Analytics fully implemented?
 - [ ] Jotform functional?
 - [ ] All pages link to each other?
+- [ ] Canoeing Page content
+- [ ] Kayaking Page content
+- [ ] Camping Page content
+- [ ] On The River Wye Page content
+- [ ] Prices Page content
 
 ## Phase 5: Evaluation
 
