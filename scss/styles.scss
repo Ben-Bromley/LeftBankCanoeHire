@@ -49,8 +49,6 @@ body {
         font-size: 1.3rem;
     }
 }
-
-
 header {
     background-color: $primary;
     #info-bar {
@@ -176,12 +174,7 @@ main {
             }
         }
     }
-    ul#contents {
-        box-sizing: border-box;
-        padding: 15px 40px;
-        border: 1px solid $primary;
-        border-radius: 0.5em;
-    }
+
     // ---- Form ----
     #form-container {
         // min-height: 50vh;
@@ -209,6 +202,14 @@ main {
         }   
     }
 }
+// only for pages with contents tables
+ul#contents {
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid $primary;
+    border-radius: 0.5em;
+}
+
 // ---- Activities ----
 #slide-2 {
     margin: 0 auto;

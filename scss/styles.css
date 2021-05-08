@@ -174,14 +174,6 @@ main {
   font-weight: normal;
 }
 
-#slide-1 ul#contents {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 15px 40px;
-  border: 1px solid #3E5F74;
-  border-radius: 0.5em;
-}
-
 #slide-1 #form-container #hire-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,6 +207,14 @@ main {
 #slide-1 #form-container #hire-form button {
   font-size: 1.2rem;
   padding: 0.4em 1.5em;
+}
+
+ul#contents {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 40px;
+  border: 1px solid #3E5F74;
+  border-radius: 0.5em;
 }
 
 #slide-2 {
