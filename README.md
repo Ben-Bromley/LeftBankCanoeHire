@@ -24,13 +24,10 @@
      - [x] Insert updated images and license logo
         - [x] Crop header images
      - [x] Replace link images with icons
-     - [ ] Add Dropdowns and active page indicator
      - [x] Embed Youtube Link
      - [x] Embed facebook feed above footer
-          - [ ] multiple iframes to responsively render feed?
           - [x] remodel after original design
      - [x] Add carousel for other images, call it "Gallery"
-     - [ ] Consider changing header image based on activity or screen
 - [x] 2nd Draft
 - [x] 2nd Draft Review: APPROVED
 
@@ -42,16 +39,26 @@
 
 ## Phase 4: Final Implementation
 
-- [ ] Space for All content?
 - [x] Same Branding?
 - [ ] Analytics fully implemented?
 - [ ] Jotform functional?
 - [ ] All pages link to each other?
-- [ ] Canoeing Page content
-- [ ] Kayaking Page content
-- [ ] Camping Page content
+     - [x] Main Nav links
+     - [ ] Footer links
+- [x] Homepage content
+- [x] Canoeing Page content
+- [x] Kayaking Page content
+- [x] Camping Page content
 - [ ] On The River Wye Page content
-- [ ] Prices Page content
+     - [ ] on the river wye
+          - [ ] Images
+          - [x] Content
+     - [ ] Accomodation
+          - [ ] Images
+          - [ ] Content
+     - [ ] Stretches of the River Wye
+     - [ ] River Wye Safety
+- [x] Prices Page content
 
 ## Phase 5: Evaluation
 
