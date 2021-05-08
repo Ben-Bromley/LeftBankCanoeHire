@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@use "sass:map";
 html {
   scroll-behavior: smooth;
 }
@@ -23,66 +24,86 @@ a.anchor {
 body {
   background-color: #FCF3F0;
   overflow-x: hidden;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #3E5F74;
 }
+
 body h1, body h2, body h3, body h4, body h5, body h6, body a {
-  font-family: "Bree Serif", sans-serif;
+  font-family: 'Bree Serif' , sans-serif;
   color: #3E5F74;
 }
+
 body h1 {
   font-size: 2.8rem;
 }
+
 body h2 {
   font-size: 2.5;
 }
+
 body h3 {
   font-size: 2rem;
 }
+
 body p, body button, body ul li, body a {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito' , sans-serif;
   font-size: 1.3rem;
 }
 
 header {
   background-color: #3E5F74;
 }
+
 header #info-bar {
   background-color: #3E5F74;
   border-bottom: 3px solid #cbdbdb;
   color: white;
   padding: 3px 2%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 2rem;
   height: 5vh;
 }
+
 header #info-bar div {
   max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 0.5em;
 }
+
 header #info-bar div i {
   font-size: 1rem;
 }
+
 header #info-bar div a {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-decoration: none;
   padding-left: 0.4em;
   color: #eee;
   font-size: 1rem;
 }
+
 header #info-bar #envelope {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header #header-img-container #header-carousel {
   display: block;
   margin: 0 auto;
   max-width: 400px;
 }
+
 header #header-img-container img {
   margin: 0 auto;
   width: 100%;
 }
+
 header #logoLeftBank {
   position: absolute;
   z-index: 2;
@@ -92,6 +113,7 @@ header #logoLeftBank {
   min-width: 140px;
   max-width: 200px;
 }
+
 header #adventureLicense {
   position: absolute;
   z-index: 2;
@@ -105,6 +127,7 @@ header #adventureLicense {
   border-radius: 50%;
   border: 5px solid #cbdbdb;
 }
+
 header nav {
   background-color: #3E5F74;
   padding: 0 !important;
@@ -112,6 +135,7 @@ header nav {
   border-top: 3px solid #cbdbdb;
   border-bottom: 3px solid #cbdbdb;
 }
+
 header nav ul.navbar-nav a.nav-link {
   color: #eee !important;
 }
@@ -126,6 +150,7 @@ main {
   background-color: #3E5F74;
   color: white;
 }
+
 .btn-main:hover {
   background-color: #6e8594;
 }
@@ -134,32 +159,51 @@ main {
   margin: 0 auto;
   min-height: 70vh;
 }
+
 #slide-1 #title h1 {
   margin-bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: bolder;
 }
+
 #slide-1 #title h1 span {
   font-weight: normal;
 }
+
 #slide-1 ul#contents {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px 40px;
   border: 1px solid #3E5F74;
   border-radius: 0.5em;
 }
+
 #slide-1 #form-container #hire-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-radius: 1em;
 }
+
 #slide-1 #form-container #hire-form label {
   width: 100%;
   margin: 2px 0 0px 0;
 }
+
 #slide-1 #form-container #hire-form input {
   width: 100%;
   padding: 0.4rem;
@@ -167,6 +211,7 @@ main {
   border-radius: 0.2em;
   border: 1px solid black;
 }
+
 #slide-1 #form-container #hire-form button {
   font-size: 1.2rem;
   padding: 0.4em 1.5em;
@@ -174,45 +219,66 @@ main {
 
 #slide-2 {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 #slide-2 h2 {
   text-align: center;
   font-weight: 200;
 }
+
 #slide-2 .activity-images {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 #slide-2 .activity-images .card {
   padding: 1rem;
-  flex-basis: 300px;
-  flex-grow: 2;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   width: 400px;
   max-width: 400px;
   border-radius: 1.5em;
   background: #FCF3F0;
   margin: 5px;
 }
+
 #slide-2 .activity-images .card h3 {
   margin-top: 10px;
   color: #3E5F74;
 }
+
 #slide-2 .activity-images .card p {
   color: #3E5F74;
   font-size: 1.3rem;
 }
+
 #slide-2 .activity-images .card p a {
   color: #3E5F74;
   text-decoration: none;
 }
+
 #slide-2 .activity-images .card p a:hover {
   text-decoration: underline;
 }
+
 #slide-2 .activity-images img {
   border-radius: 1.5em;
 }
@@ -220,40 +286,68 @@ main {
 #row-slide-3 {
   margin: 5% auto;
 }
+
 #row-slide-3 article#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 39rem;
 }
+
 #row-slide-3 article#links #page-links, #row-slide-3 article#links #social-links {
   margin: 5% 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 1.3rem;
 }
+
 #row-slide-3 article#links #page-links span.page-link-item, #row-slide-3 article#links #social-links span.page-link-item {
   padding: 0.2rem 0.5rem;
   width: 50%;
-  flex-basis: 150px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
+
 #row-slide-3 article#links #page-links span.page-link-item a, #row-slide-3 article#links #social-links span.page-link-item a {
   color: #3E5F74;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
+
 #row-slide-3 article#links #page-links span.page-link-item a:hover, #row-slide-3 article#links #social-links span.page-link-item a:hover {
   text-decoration: underline;
 }
+
 #row-slide-3 article#links #page-links span.page-link-item a i, #row-slide-3 article#links #social-links span.page-link-item a i {
   font-size: 4.8rem;
 }
+
 #row-slide-3 article#links #social-links {
   width: 25rem;
 }
@@ -280,21 +374,26 @@ footer {
   background-color: #3E5F74;
   color: #eee;
 }
+
 footer hr {
   border: 1px solid white;
   opacity: 1;
 }
+
 footer .footer-content a {
   color: #eee;
   text-decoration: none;
 }
+
 footer .footer-content a:hover {
   color: #eee;
   text-decoration: underline;
 }
+
 footer .footer-content .linkGroup {
   padding: 0.8em 0;
 }
+
 footer .footer-content .copyright {
   padding-top: 20px;
   color: #eee;
@@ -308,16 +407,15 @@ footer .footer-content .copyright {
   html #info-bar {
     font-size: 80%;
   }
-
   #logoLeftBank {
     left: 0 !important;
     width: 25vw !important;
     min-width: 70px !important;
   }
-
   #adventureLicense {
     right: 0 !important;
     width: 24vw !important;
     min-width: 90px !important;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */
