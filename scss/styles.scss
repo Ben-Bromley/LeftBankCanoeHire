@@ -79,12 +79,10 @@ header {
         }
     }
     #header-img-container {
-        // height: 10vh;
-        // border-radius: 1.5em;
         #header-carousel {
             display: block;
             margin: 0 auto;
-            max-width: 400px;
+            max-width: 360px;
         }
 
         img {
@@ -151,9 +149,13 @@ main {
 }
 
 div img.image-embed {
+    display: block;
     width: 50%;
     float: right;
     max-width: 500px;
+    border: 2px solid $primary;
+    border-radius: 20px;
+    margin: 10px auto;
 }
 // .btn-outline-primary {
 //     padding: 0.3em 0.8em;
@@ -355,6 +357,6 @@ footer {
     // makes images stack over text from medium screens upwards
     div img.image-embed {
         float: none;
-        width: 100%;
+        width: 98%;
     }
 }
