@@ -39,6 +39,9 @@ body h2 {
 body h3 {
   font-size: 2rem;
 }
+body h4 {
+  font-size: 1.8rem;
+}
 body p, body button, body ul li, body a {
   font-family: "Nunito", sans-serif;
   font-size: 1.3rem;
