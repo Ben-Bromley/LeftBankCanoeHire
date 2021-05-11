@@ -149,6 +149,12 @@ main {
         background-color: $primary-hover;
     }
 }
+
+div img.image-embed {
+    width: 50%;
+    float: right;
+    max-width: 500px;
+}
 // .btn-outline-primary {
 //     padding: 0.3em 0.8em;
 //     border: 4px solid $primary;
@@ -328,9 +334,11 @@ footer {
 // Add a media query where the flex direction in the footer changes
 @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
     html {
+        // shrinks text to fit on smaller devices better
         font-size: 80%; 
         #info-bar {font-size: 80%;}
     }
+    // shrinks logos for smaller screens
     #logoLeftBank {
         left: 0 !important;
         width: 25vw !important;
@@ -341,5 +349,12 @@ footer {
         width: 24vw !important;
         min-width: 90px !important;
     }
-    
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, "md")){
+    // makes images stack over text from medium screens upwards
+    div img.image-embed {
+        float: none;
+        width: 100%;
+    }
 }
