@@ -50,12 +50,13 @@
 - [x] Kayaking Page content
 - [x] Camping Page content
 - [ ] On The River Wye Page content
-     - [ ] on the river wye
-          - [ ] Images
+     - [x] on the river wye
+          - [x] Images
           - [x] Content
      - [ ] Accomodation
           - [ ] Images
           - [ ] Content
+          - [ ] Accomodation links
      - [ ] Stretches of the River Wye
      - [ ] River Wye Safety
 - [x] Prices Page content
