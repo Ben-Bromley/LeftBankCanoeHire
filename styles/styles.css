@@ -25,9 +25,8 @@ body {
   box-sizing: border-box;
   color: #3E5F74;
 }
-body h1, body h2, body h3, body h4, body h5, body h6, body a {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Bree Serif", sans-serif;
-  color: #3E5F74;
 }
 body h1 {
   font-size: 2.8rem;
@@ -44,7 +43,6 @@ body h4 {
 body p, body button, body ul li, body a {
   font-family: "Nunito", sans-serif;
   font-size: 1.3rem;
-  font-weight: 400;
 }
 body a {
   text-decoration: none;
@@ -123,6 +121,7 @@ header nav {
 }
 header nav ul.navbar-nav a.nav-link {
   color: #eee !important;
+  font-family: "Bree Serif", sams-serif;
 }
 
 main {
@@ -301,7 +300,6 @@ footer .footer-content a {
   text-decoration: none;
 }
 footer .footer-content a:hover {
-  color: #eee;
   text-decoration: underline;
 }
 footer .footer-content .linkGroup {
