@@ -53,15 +53,17 @@ body a:hover {
   text-decoration: underline;
 }
 
+article, #embeds, .activity-images {
+  margin: 0 auto;
+}
+
 header {
   background-color: #3E5F74;
 }
 header #info-bar {
-  background-color: #3E5F74;
   border-bottom: 3px solid #cbdbdb;
   color: white;
   padding: 3px 2%;
-  align-items: center;
   min-height: 2rem;
   height: 5vh;
 }
@@ -74,7 +76,6 @@ header #info-bar div i {
   font-size: 1rem;
 }
 header #info-bar div a {
-  text-decoration: none;
   padding-left: 0.4em;
   color: #eee;
   font-size: 1rem;
@@ -92,24 +93,24 @@ header #header-img-container img {
   width: 100%;
 }
 header #logoLeftBank {
-  position: absolute;
   z-index: 2;
+  position: absolute;
   top: 4vh;
   left: 2vw;
   width: 22vw;
-  min-width: 140px;
-  max-width: 200px;
+  min-width: 135px !important;
+  max-width: 200px !important;
 }
 header #adventureLicense {
-  position: absolute;
   z-index: 2;
+  position: absolute;
   top: 4vh;
   right: 2vw;
   width: 22vw;
-  min-width: 120px;
-  max-width: 190px;
+  min-width: 130px !important;
+  max-width: 195px !important;
   background: #3E5F74;
-  padding: 4px 0 0 7px;
+  padding: 3px 0 0 9px;
   border-radius: 50%;
   border: 5px solid #cbdbdb;
 }
@@ -131,6 +132,7 @@ main {
 
 .btn-main {
   border-radius: 0.2em;
+  padding: 0.4em 1.5em;
   border: none;
   background-color: #3E5F74;
   color: white;
@@ -139,18 +141,20 @@ main {
   background-color: #244153;
 }
 
-div img.image-embed {
-  display: block;
-  width: 50%;
-  float: right;
-  max-width: 400px;
+img.image-embed {
   border: 2px solid #3E5F74;
   border-radius: 20px;
   margin: 10px auto;
 }
 
+img.accommodation {
+  display: block;
+  width: 50%;
+  float: right;
+  max-width: 400px;
+}
+
 #slide-1 {
-  margin: 0 auto;
   min-height: 70vh;
 }
 #slide-1 #title h1 {
@@ -169,20 +173,14 @@ div img.image-embed {
   justify-content: space-evenly;
   border-radius: 1em;
 }
-#slide-1 #form-container #hire-form label {
+#slide-1 #form-container #hire-form label, #slide-1 #form-container #hire-form input {
   width: 100%;
-  margin: 2px 0 0px 0;
+  margin: 2px 0;
 }
 #slide-1 #form-container #hire-form input {
-  width: 100%;
   padding: 0.4rem;
-  margin: 2px 0;
   border-radius: 0.2em;
   border: 1px solid black;
-}
-#slide-1 #form-container #hire-form button {
-  font-size: 1.2rem;
-  padding: 0.4em 1.5em;
 }
 
 ul#contents {
@@ -192,7 +190,6 @@ ul#contents {
 }
 
 #slide-2 {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -203,9 +200,8 @@ ul#contents {
 #slide-2 .activity-images {
   width: 90%;
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #slide-2 .activity-images .card {
   padding: 1rem;
@@ -269,10 +265,6 @@ ul#contents {
   width: 25rem;
 }
 
-#embeds {
-  margin: 0 auto;
-}
-
 #leftbank-youtube {
   width: 100vw;
   height: 56.25vw;
@@ -319,18 +311,6 @@ footer .footer-content .copyright {
   }
   html #info-bar {
     font-size: 80%;
-  }
-
-  #logoLeftBank {
-    left: 0 !important;
-    width: 25vw !important;
-    min-width: 70px !important;
-  }
-
-  #adventureLicense {
-    right: 0 !important;
-    width: 24vw !important;
-    min-width: 90px !important;
   }
 }
 @media only screen and (max-width: 768px) {

@@ -1,12 +1,21 @@
 @use "sass:map";
-// For secondary font, more detailed text etc
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
-// Original Header Font
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-// Colours
+@mixin image-styling { border: 2px solid $primary; border-radius: 20px; margin: 10px auto;}
+@mixin flex-column{display: flex; flex-direction: column;}
+@mixin flex-wrap {display: flex; flex-wrap: wrap;}
+@mixin logo ($placement, $min-width, $max-width){
+    z-index: 2;
+    position: absolute;
+    top: 4vh;
+    #{$placement}: 2vw;
+    width: 22vw; 
+    min-width: $min-width !important;
+    max-width: $max-width !important;
+}
+@mixin logo-sm ($width, $min-width){ width: $width; min-width: $min-width !important;}
 $primary: #3E5F74;
 $primary-hover: #244153;
-// $primary-hover: #6e8594;
 $primary-accent: #cbdbdb;
 $bg-main: #FCF3F0;
 $text-light: #eee;
@@ -28,22 +37,15 @@ body {
     h3 {font-size: 2rem;}
     h4 {font-size: 1.8rem;}
     p, button, ul li, a { color: $primary; font-family: 'Nunito' , sans-serif; font-size: 1.3rem;}
-    a {
-        text-decoration: none;
-        &:hover {
-            color: $primary-hover;
-            text-decoration: underline;
-        }
-    }
+    a {text-decoration: none; &:hover { color: $primary-hover; text-decoration: underline;}}
 }
+article, #embeds, .activity-images {margin: 0 auto;}
 header {
     background-color: $primary;
     #info-bar {
-        background-color: $primary;
         border-bottom: 3px solid $primary-accent;
         color:white;
         padding: 3px 2%;
-        align-items: center;
         min-height: 2rem;
         height: 5vh;
         div {
@@ -51,12 +53,7 @@ header {
             display: flex;
             margin: 0 0.5em;
             i {font-size: 1rem;}
-            a {
-                text-decoration: none;
-                padding-left: 0.4em; 
-                color: $text-light;
-                 font-size: 1rem;
-            }
+            a {padding-left: 0.4em; color: $text-light; font-size: 1rem;}
         }
         #envelope {align-items: center;}
     }
@@ -67,28 +64,14 @@ header {
             max-width: 360px;}
         img {margin: 0 auto;width: 100%;}
     }
+
     #logoLeftBank {
-        position: absolute;
-        z-index: 2;
-        top: 4vh;
-        left: 2vw;
-        width: 22vw;
-        min-width: 140px;
-        max-width: 200px;
+        @include logo(left, 135px, 200px);
     }
     #adventureLicense {
-        position: absolute;
-        z-index: 2;
-        top: 4vh;
-        right: 2vw;
-        // combination of a dynamic width and max/min ,
-        // gives lots of control over image sizes
-        width: 22vw;
-        min-width: 120px;
-        max-width: 190px;
+        @include logo (right, 130px, 195px);
         background: $primary;
-        // temporary padding
-        padding: 4px 0 0 7px;
+        padding: 3px 0 0 9px;
         border-radius: 50%;
         border: 5px solid $primary-accent;
     }
@@ -109,26 +92,25 @@ header {
 main {background-color: $bg-main;}
 .btn-main {
     border-radius: 0.2em;
+    padding: 0.4em 1.5em;
     border: none;
     background-color: $primary;
     color: white;
     &:hover {background-color: $primary-hover;}
 }
-div img.image-embed {
+img.image-embed {
+    @include image-styling;
+}
+img.accommodation {
     display: block;
     width: 50%;
     float: right;
     max-width: 400px;
-    border: 2px solid $primary;
-    border-radius: 20px;
-    margin: 10px auto;
 }
 #slide-1 {
-    margin: 0 auto;
     min-height: 70vh;
     #title {
         h1 {
-            // margin: 0;
             margin-bottom: 2px;
             display: flex;
             flex-wrap: wrap;
@@ -141,51 +123,39 @@ div img.image-embed {
     #form-container {
         // min-height: 50vh;
         #hire-form {
-            display: flex;
-            flex-direction: column;
+            @include flex-column();
             align-items: start;
             justify-content: space-evenly;
             border-radius: 1em;
-            label {
+            label, input {
                 width: 100%;
-                margin: 2px 0 0px 0;
+                margin: 2px 0;
             }
             input {
-                width: 100%;
                 padding: 0.4rem;
-                margin: 2px 0;
                 border-radius: 0.2em;
                 border: 1px solid black;
-            }
-            button {
-                font-size: 1.2rem;
-                padding: 0.4em 1.5em;
             }
         }   
     }
 }
 // only for pages with contents tables
 ul#contents {
-    // box-sizing: border-box;
     padding: 15px 40px;
     border: 1px solid $primary;
     border-radius: 0.5em;
 }
 // ---- Activities ----
 #slide-2 {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     h2 {
         text-align: center;
         font-weight: 200;
     }
     .activity-images {
         width: 90%;
-        display: flex;
+        @include flex-wrap();
         justify-content: center;
-        margin: 0 auto;
-        flex-wrap: wrap;
         .card {
             padding: 1rem;
             flex-basis: 300px;
@@ -207,24 +177,17 @@ ul#contents {
     }
 }
 // ---- slide 3 container ---- 
-
 #row-slide-3 {
-    // width: 100vw;
-    // centers the container properly
     margin: 5% auto;
     // ---- page links ----
     article#links {
-        // border: 1px solid green;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center ;
         max-width: 39rem;
         #page-links, #social-links {
             margin: 5% 0;
             width: 100%;
-            // border: 1px solid red;
-            display: flex;
-            flex-wrap: wrap;
+            @include flex-wrap;
             font-size: 1.3rem;
             span.page-link-item {
                 padding: 0.2rem 0.5rem;
@@ -236,16 +199,11 @@ ul#contents {
                     // border: 1px solid blue;
                     color: $primary;
                     text-decoration: none;
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-column();
                     align-items: center;
                     text-align: center;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                    i {
-                        font-size: 4.8rem;
-                    }
+                    &:hover {text-decoration: underline;}
+                    i {font-size: 4.8rem;}
                 }
             }
         }
@@ -253,7 +211,6 @@ ul#contents {
     }
 }
 // ----- for embded frames ---
-#embeds {margin: 0 auto;}
 #leftbank-youtube {width: 100vw; height: 56.25vw; max-width: 840px; max-height: 472.5px;  margin: 10px 0;}
 #fb-feed {margin: 10px 0;}
 // ---- Footer ----
@@ -273,29 +230,15 @@ footer {
         .copyright { padding-top: 20px; max-width: 60%;}
     }
 }
+
 @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
     html {
         // shrinks text to fit on smaller devices better
         font-size: 80%; 
         #info-bar {font-size: 80%;}
     }
-    // shrinks logos for smaller screens
-    #logoLeftBank {
-        left: 0 !important;
-        width: 25vw !important;
-        min-width: 70px !important;
-    }
-    #adventureLicense {
-        right: 0 !important;
-        width: 24vw !important;
-        min-width: 90px !important;
-    }
 }
-
 @media only screen and (max-width: map-get($grid-breakpoints, "md")){
     // makes images stack over text from medium screens upwards
-    div img.image-embed {
-        float: none;
-        width: 98%;
-    }
+    div img.image-embed {float: none; width: 98%;}
 }
