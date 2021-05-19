@@ -1,18 +1,15 @@
 @use "sass:map";
-
-// Add google imports here
-// For main font, titles, larger text etc
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 // For secondary font, more detailed text etc
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
 // Original Header Font
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 
 // Colours
 $primary: #3E5F74;
+$primary-hover: #244153;
+// $primary-hover: #6e8594;
 $primary-accent: #cbdbdb;
-$primary-hover: #6e8594;
 $bg-main: #FCF3F0;
 $text-light: #eee;
 
@@ -48,6 +45,14 @@ body {
     p, button, ul li, a{
         font-family: 'Nunito' , sans-serif;
         font-size: 1.3rem;
+        font-weight: 400;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $primary-hover;
+            text-decoration: underline;
+        }
     }
 }
 header {
@@ -68,7 +73,6 @@ header {
                 font-size: 1rem;
             }
             a {
-                font-family: 'Nunito', sans-serif;
                 text-decoration: none;
                 padding-left: 0.4em; 
                 color: $text-light;
@@ -247,26 +251,15 @@ ul#contents {
                 margin-top: 10px;
                 color: $primary;
             }
-            p {
-                // color: $text-light;
-                color: $primary;
-                font-size: 1.3rem;
-                a {
-                    // color: $text-light;
-                    color: $primary;
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
+            a.learn-more-link {
+                font-weight: 600;
             }
-        }
-        img {
+            img {
             border-radius: 1.5em; 
+            }
         }
     }
 }
-
 // ---- slide 3 container ---- 
 
 #row-slide-3 {
