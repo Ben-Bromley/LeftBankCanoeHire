@@ -41,6 +41,7 @@ body h4 {
   font-size: 1.8rem;
 }
 body p, body button, body ul li, body a {
+  color: #3E5F74;
   font-family: "Nunito", sans-serif;
   font-size: 1.3rem;
 }
@@ -185,7 +186,6 @@ div img.image-embed {
 }
 
 ul#contents {
-  box-sizing: border-box;
   padding: 15px 40px;
   border: 1px solid #3E5F74;
   border-radius: 0.5em;
@@ -291,6 +291,9 @@ footer {
   background-color: #3E5F74;
   color: #eee;
 }
+footer p, footer a {
+  color: inherit;
+}
 footer hr {
   border: 1px solid white;
   opacity: 1;
@@ -307,7 +310,6 @@ footer .footer-content .linkGroup {
 }
 footer .footer-content .copyright {
   padding-top: 20px;
-  color: #eee;
   max-width: 60%;
 }
 
