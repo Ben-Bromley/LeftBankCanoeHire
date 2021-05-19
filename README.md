@@ -54,8 +54,8 @@
           - [x] Images
           - [x] Content
      - [ ] Accomodation
-          - [ ] Images
-          - [ ] Content
+          - [x] Images
+          - [x] Content
           - [ ] Accomodation links
      - [ ] Stretches of the River Wye
      - [ ] River Wye Safety
