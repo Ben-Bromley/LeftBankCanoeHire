@@ -1,7 +1,7 @@
 @use "sass:map";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@mixin image-styling { border: 2px solid $primary; border-radius: 20px; margin: 10px 10px;}
+@mixin image-styling { border: 2px solid $primary; border-radius: 10px; margin: 10px auto;}
 @mixin flex-column{display: flex; flex-direction: column;}
 @mixin flex-wrap {display: flex; flex-wrap: wrap;}
 @mixin logo ($placement, $min-width, $max-width){z-index: 2;position: absolute;top: 4vh;#{$placement}: 2vw;width: 22vw; min-width: $min-width !important;max-width: $max-width !important;}
@@ -91,13 +91,17 @@ img.image-embed {
     @include image-styling;
     max-width: 400px;
 }
+img.minibus {float: right; width: 50%;}
 img.river-wye-image {
     float: left;
 }
 #accomodation div {
     display: flex;
+    margin: 5px 0;
     align-items: center;
+    justify-content: space-evenly;
     &:nth-of-type(2n) {flex-direction: row-reverse;}
+    p {max-width: 60ch;}
 } 
 #slide-1 {
     min-height: 70vh;
@@ -234,4 +238,11 @@ footer {
     // makes images stack over text from medium screens upwards
     img.image-embed {width: 100%; margin: 10px auto;}
     #accomodation div {display: block;}
+    img.minibus {
+        float: none;
+    }
+}
+
+@media only screen and (min-width: map-get($grid-breakpoints, "lg")){
+    .container {margin: 0 auto; max-width: 70vw;}
 }

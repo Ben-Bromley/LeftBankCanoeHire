@@ -154,9 +154,14 @@ main {
 
 img.image-embed {
   border: 2px solid #3E5F74;
-  border-radius: 20px;
-  margin: 10px 10px;
+  border-radius: 10px;
+  margin: 10px auto;
   max-width: 400px;
+}
+
+img.minibus {
+  float: right;
+  width: 50%;
 }
 
 img.river-wye-image {
@@ -167,9 +172,13 @@ img.river-wye-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 5px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #accomodation div:nth-of-type(2n) {
@@ -177,6 +186,10 @@ img.river-wye-image {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+#accomodation div p {
+  max-width: 60ch;
 }
 
 #slide-1 {
@@ -416,6 +429,16 @@ footer .footer-content .copyright {
   }
   #accomodation div {
     display: block;
+  }
+  img.minibus {
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 70vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */
