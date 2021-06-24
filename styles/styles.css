@@ -136,6 +136,12 @@ header nav {
   border-bottom: 3px solid #cbdbdb;
 }
 
+header nav ul.navbar-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 header nav ul.navbar-nav a.nav-link {
   color: #eee !important;
   font-family: 'Bree Serif', sans-serif;
@@ -198,7 +204,7 @@ img.river-wye-image {
 }
 
 #slide-1 {
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 #slide-1 #title h1 {

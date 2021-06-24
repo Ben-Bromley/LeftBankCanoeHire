@@ -24,10 +24,6 @@ body {
     box-sizing: border-box;
     color: $primary;
     h1, h2, h3, h4, h5, h6 {font-family: 'Bree Serif' , sans-serif;}
-    // h1 {font-size: 2.8rem;}
-    // h2 {font-size: 2.5;}
-    // h3 {font-size: 2rem;}
-    // h4 {font-size: 1.8rem;}
     a {text-decoration: none; color: $primary; font-family: 'Nunito' , sans-serif; &:hover { color: $primary-hover; text-decoration: underline;}}
     p, button, ul li { color: $primary; font-family: 'Nunito' , sans-serif; font-size: 1.1rem; font-weight: 400;}
 }
@@ -71,6 +67,9 @@ header {
         border-top: 3px solid $primary-accent;
         border-bottom: 3px solid $primary-accent;
         ul.navbar-nav {
+            position: sticky;
+            // left: 0;
+            top: 0;
             a.nav-link {
                 color:$text-light !important;
                 font-family: 'Bree Serif', sans-serif;
@@ -99,7 +98,7 @@ img.river-wye-image {float: left;}
     p {max-width: 60ch;}
 } 
 #slide-1 {
-    min-height: 70vh;
+    min-height: 65vh;
     #title {
         h1 {
             margin-bottom: 2px;
