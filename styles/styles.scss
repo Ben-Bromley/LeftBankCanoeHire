@@ -1,7 +1,7 @@
 @use "sass:map";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@mixin image-styling { border: 2px solid $primary; border-radius: 10px; margin: 10px auto;}
+@mixin image-styling { border: 2px solid $primary; border-radius: 10px; margin: 10px 10px;}
 @mixin flex-column{display: flex; flex-direction: column;}
 @mixin flex-wrap {display: flex; flex-wrap: wrap;}
 @mixin logo ($placement, $min-width, $max-width){z-index: 2;position: absolute;top: 4vh;#{$placement}: 2vw;width: 22vw; min-width: $min-width !important;max-width: $max-width !important;}
@@ -16,11 +16,11 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 140
 html {scroll-behavior: smooth;}
 div {max-width: 100vw;}
 .row {margin: 0 auto;}
+.txt-bold {font-weight: 700;}
 // fix for scrolling contents pages
 a.anchor{display: block; position: relative; top: -300px; visibility: hidden;}
 body {
     background-color: $bg-main;
-    // overflow-x: hidden; 
     box-sizing: border-box;
     color: $primary;
     h1, h2, h3, h4, h5, h6 {font-family: 'Bree Serif' , sans-serif;}
@@ -28,8 +28,8 @@ body {
     // h2 {font-size: 2.5;}
     // h3 {font-size: 2rem;}
     // h4 {font-size: 1.8rem;}
-    a {text-decoration: none; color: $primary; &:hover { color: $primary-hover; text-decoration: underline;}}
-    p, button, ul li, a.nav-link { color: $primary; font-family: 'Nunito' , sans-serif; font-size: 1.1rem; font-weight: 400;}
+    a {text-decoration: none; color: $primary; font-family: 'Nunito' , sans-serif; &:hover { color: $primary-hover; text-decoration: underline;}}
+    p, button, ul li { color: $primary; font-family: 'Nunito' , sans-serif; font-size: 1.1rem; font-weight: 400;}
 }
 article, #embeds, .activity-images {margin: 0 auto;}
 header {
@@ -87,14 +87,9 @@ main {background-color: $bg-main;}
     color: white;
     &:hover {background-color: $primary-hover;}
 }
-img.image-embed {
-    @include image-styling;
-    max-width: 400px;
-}
+img.image-embed {@include image-styling; max-width: 400px;}
 img.minibus {float: right; width: 50%;}
-img.river-wye-image {
-    float: left;
-}
+img.river-wye-image {float: left;}
 #accomodation div {
     display: flex;
     margin: 5px 0;
@@ -239,6 +234,9 @@ footer {
     img.image-embed {width: 100%; margin: 10px auto;}
     #accomodation div {display: block;}
     img.minibus {
+        float: none;
+    }
+    img.river-wye-image {
         float: none;
     }
 }
