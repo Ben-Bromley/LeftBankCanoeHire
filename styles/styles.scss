@@ -66,14 +66,9 @@ header {
         margin-bottom: 8px;
         border-top: 3px solid $primary-accent;
         border-bottom: 3px solid $primary-accent;
-        ul.navbar-nav {
-            position: sticky;
-            // left: 0;
-            top: 0;
-            a.nav-link {
-                color:$text-light !important;
-                font-family: 'Bree Serif', sans-serif;
-            }
+        ul.navbar-nav a.nav-link {
+            color:$text-light !important;
+            font-family: 'Bree Serif', sans-serif;
         }
     }
 }
