@@ -221,6 +221,7 @@ footer {
         // shrinks text to fit on smaller devices better
         font-size: 75%; 
         #info-bar {font-size: 80%;}
+        a.nav-link {font-size: 3vw}
     }
 }
 @media only screen and (max-width: map-get($grid-breakpoints, "md")){
