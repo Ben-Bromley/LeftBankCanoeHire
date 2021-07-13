@@ -219,7 +219,7 @@ footer {
 @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
     html {
         // shrinks text to fit on smaller devices better
-        font-size: 80%; 
+        font-size: 75%; 
         #info-bar {font-size: 80%;}
     }
 }
