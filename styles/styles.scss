@@ -4,7 +4,7 @@
 @mixin image-styling { border: 2px solid $primary; border-radius: 10px; margin: 10px 10px;}
 @mixin flex-column{display: flex; flex-direction: column;}
 @mixin flex-wrap {display: flex; flex-wrap: wrap;}
-@mixin logo ($placement, $min-width, $max-width){z-index: 2;position: absolute;top: 4vh;#{$placement}: 2vw;width: 22vw; min-width: $min-width !important;max-width: $max-width !important;}
+@mixin logo ($placement, $min-width, $max-width){z-index: 2;position: absolute;#{$placement}: 2vw;width: 22vw; min-width: $min-width !important;max-width: $max-width !important;}
 @mixin logo-sm ($width, $min-width){ width: $width; min-width: $min-width !important;}
 $primary: #3E5F74;
 $primary-hover: #244153;
@@ -52,13 +52,15 @@ header {
 
     #logoLeftBank {
         @include logo(left, 105px, 200px);
+        top: 4vh;
     }
     #adventureLicense {
-        @include logo (right, 100px, 195px);
-        background: $primary;
-        padding: 3px 0 0 9px;
-        border-radius: 50%;
-        border: 5px solid $primary-accent;
+        @include logo (right, 100px, 105px);
+        top: 9vh;
+        // background: $primary;
+        // padding: 3px 0 0 7px;
+        // border-radius: 50%;
+        // border: 6px solid $primary-accent;
     }
     nav {
         background-color: $primary;
@@ -157,7 +159,7 @@ ul#contents {
             a.learn-more-link {
                 font-weight: 700;
             }
-            img {border-radius: 1.5em;}
+            img {border-radius: 1.5em; width: 70%; margin: 0 auto;}
         }
     }
 }
